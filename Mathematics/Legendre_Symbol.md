@@ -14,10 +14,10 @@
 - Theo Legendre's Symbol ta có: $(a/p)$ $\equiv a^{(p-1)/2} \pmod p$
   * Nếu $(a/p) = 1$ thì $a$ là quadratic residue.
   * Nếu $(a/p) = -1$ thì $a$ là quadratic non-residue.
-  * Nếu $(a/p) = 0$ thì $a \equiv 0 \pmod p$
+  * Nếu $(a/p) = 0$ thì $a \equiv 0 \pmod p$.
 - Đề bài còn cho ta biết dữ kiện: $p \equiv 3 \pmod 4 \iff p \bmod 4 = 3$
-  * Số nguyên tố $p$ ($p \not2$) chỉ có 2 dạng $p \bmod 4 = 3$ và $p \bmod 4 = 1$
-  * 
+  * Số nguyên tố $p$ ($p \neq 2$) chỉ có đúng hai dạng: $p \bmod 4 = 3$ và $p \bmod 4 = 1$.
+  * Nếu $a$ là quadratic residue thì $a^{(p-1)/2} \equiv a^{p-1} \equiv 1 \pmod p$ theo định lý Fermat nhỏ.
 ## 3. Python Implementation & Logic
 
 ### **Algorithm Approach:**
