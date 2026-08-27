@@ -10,8 +10,8 @@
 
 ## 2. Mathematical Background & Solution
 > [!CAUTION]
-> (a/p) chỉ là ký hiệu không phải phép tính
-- Theo Legendre's Symbol ta có: ($a$/$p$) $\equiv a^{(p-1)/2} \pmod p$
+> $(a/p)$ chỉ là ký hiệu không phải phép tính
+- Theo Legendre's Symbol ta có: $(a/p)$ $\equiv a^{(p-1)/2} \pmod p$
 
 ## 3. Python Implementation & Logic
 
