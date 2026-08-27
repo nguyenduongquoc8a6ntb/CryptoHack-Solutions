@@ -12,12 +12,20 @@
 > [!CAUTION]
 > $(a/p)$ chỉ là ký hiệu không phải phép tính
 - Theo Legendre's Symbol ta có: $(a/p)$ $\equiv a^{(p-1)/2} \pmod p$
-  * Nếu $(a/p) = 1$ thì $a$ là quadratic residue.
-  * Nếu $(a/p) = -1$ thì $a$ là quadratic non-residue.
+  * Nếu $(a/p) = 1$ thì $a$ là **quadratic residue**.
+  * Nếu $(a/p) = -1$ thì $a$ là **quadratic non-residue**.
   * Nếu $(a/p) = 0$ thì $a \equiv 0 \pmod p$.
 - Đề bài còn cho ta biết dữ kiện: $p \equiv 3 \pmod 4 \iff p \bmod 4 = 3$
   * Số nguyên tố $p$ ($p \neq 2$) chỉ có đúng hai dạng: $p \bmod 4 = 3$ và $p \bmod 4 = 1$.
-  * Nếu $a$ là quadratic residue thì $a^{(p-1)/2} \equiv a^{p-1} \equiv 1 \pmod p$ theo định lý Fermat nhỏ.
+  * Nếu $a$ là **quadratic residue** thì $a^{(p-1)/2} \equiv 1 \pmod p$.
+  * Để giải được bài toán ta cần tìm $k$ sao cho $(a^k)^2 \equiv x^2 \equiv a \pmod p$
+   $$
+\begin{aligned}
+a^{\frac{p-1}{2}} &\equiv (x^2)^{\frac{p-1}{2}} \pmod p \\
+                  &\equiv x^{p-1} \pmod p \\
+                  &\equiv 1 \pmod p
+\end{aligned}
+$$
 ## 3. Python Implementation & Logic
 
 ### **Algorithm Approach:**
