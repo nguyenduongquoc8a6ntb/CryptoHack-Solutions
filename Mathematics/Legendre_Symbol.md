@@ -15,7 +15,7 @@
   * Nếu $(a/p) = 1$ thì $a$ là quadratic residue.
   * Nếu $(a/p) = -1$ thì $a$ là quadratic non-residue.
   * Nếu $(a/p) = 0$ thì $a \equiv 0 \pmod p$
-- Đề bài còn cho ta biết dữ kiện $p = 3 \pmod 4 \iff p \bmod 4 = 3$
+- Đề bài còn cho ta biết dữ kiện $p \equiv 3 \pmod 4 \iff p \bmod 4 = 3$
 ## 3. Python Implementation & Logic
 
 ### **Algorithm Approach:**
