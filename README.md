@@ -2,5 +2,6 @@
 ## Introduction
 ## General
 ## Symmetric ciphers
-- [## Mathematics] (./Mathematics/Quadratic_Residues.md)
+## Mathematics
+- [Quadratic Residues] (./Mathematics/Quadratic_Residues.md)
 ## RSA
