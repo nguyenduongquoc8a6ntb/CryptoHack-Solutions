@@ -17,9 +17,9 @@
   * Nếu $(a/p) = 0$ thì $a \equiv 0 \pmod p$.
 - Đề bài còn cho ta biết dữ kiện: $p \equiv 3 \pmod 4 \iff p \bmod 4 = 3$
   * Số nguyên tố $p$ ($p \neq 2$) chỉ có đúng hai dạng: $p \bmod 4 = 3$ và $p \bmod 4 = 1$.
-  * Nếu $a$ là **quadratic residue** thì $a^{(p-1)/2} \equiv 1 \pmod p$.
-  * Để giải được bài toán ta cần tìm $k$ sao cho $(a^k)^2 \equiv x^2 \equiv a \pmod p \iff a^{2k-1} \equiv 1 \pmod p$.
-  * Kết hợp các dữ kiện ta tính được $k = (p+1)/4$ và k luôn là số nguyên do $p \bmod 4 = 3$
+  * Nếu $a$ là **quadratic residue** thì: $a^{(p-1)/2} \equiv 1 \pmod p$.
+  * Để giải được bài toán ta cần tìm $k$ sao cho: $(a^k)^2 \equiv x^2 \equiv a \pmod p \iff a^{2k-1} \equiv 1 \pmod p$.
+  * Kết hợp các dữ kiện ta tính được: $k = (p+1)/4$ (k \in N do $p \bmod 4 = 3$)
 
 ## 3. Python Implementation & Logic
 
