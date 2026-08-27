@@ -19,18 +19,18 @@
   * Số nguyên tố $p$ ($p \neq 2$) chỉ có đúng hai dạng: $p \bmod 4 = 3$ và $p \bmod 4 = 1$.
   * Nếu $a$ là **quadratic residue** thì: $a^{(p-1)/2} \equiv 1 \pmod p$.
   * Để giải được bài toán ta cần tìm $k$ sao cho: $(a^k)^2 \equiv x^2 \equiv a \pmod p \iff a^{2k-1} \equiv 1 \pmod p$.
-  * Kết hợp các dữ kiện ta tính được: $k = (p+1)/4$ ($k \in N$ vì $p \bmod 4 = 3$) $\implies x_1 = a^{(p+1)/4} \pmod p$ và $x_2 = p-x_1$
+  * Kết hợp các dữ kiện ta tính được: $k = (p+1)/4$ ($k \in N$ vì $p \bmod 4 = 3$) $\implies x_1 = a^{(p+1)/4} \pmod p$ và $x_2 = p-x_1$.
 
 ## 3. Python Implementation & Logic
 
 ### **Algorithm Approach:**
 1. Tải file output.txt
-2. Trong file ta sẽ có $p$ và mảng **ints** có chứa $a$ là **quadratic residue**
-3. Tạo mảng **quadratic_residues** rỗng
-4. Duyệt từng phần tử trong mảng **ints** nếu $a^{(p-1)/2} \pmod p = 1$ thì thêm $a$ vào danh sách **quadratic_residues**
-5. Duyệt từng phần tử trong mảng **quadratic_residues**
-6. In ra nghiệm $x_1,x_2$ ứng với mỗi phần tử trong **quadratic_residues**
-7. Flag là nghiệm lớn hơn
+2. Trong file ta sẽ có $p$ và mảng **ints** có chứa $a$ là **quadratic residue**.
+3. Tạo mảng **quadratic_residues** rỗng.
+4. Duyệt từng phần tử trong mảng **ints** nếu $a^{(p-1)/2} \pmod p = 1$ thì thêm $a$ vào danh sách **quadratic_residues**.
+5. Duyệt từng phần tử trong mảng **quadratic_residues**.
+6. In ra nghiệm $x_1,x_2$ ứng với mỗi phần tử trong **quadratic_residues**.
+7. Flag là nghiệm lớn hơn.
    
 ### **Python Code:**
 > [!CAUTION]
