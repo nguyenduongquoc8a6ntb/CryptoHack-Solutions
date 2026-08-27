@@ -5,9 +5,6 @@
 * **Source:** CryptoHack
 
 ---
-
 ## 1. Description
-> We're given a prime $p = 29$ and an array of integers `ints = [14, 6, 11]`. 
-> Find the quadratic residue $x$ such that $x^2 \equiv a \pmod p$ and calculate its square root.
-
+<img width="993" height="295" alt="image" src="https://github.com/user-attachments/assets/6ded06b5-bebe-4d3e-b4eb-1f3b838e9b61" />
 ---
