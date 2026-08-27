@@ -12,7 +12,9 @@
 > [!CAUTION]
 > $(a/p)$ chỉ là ký hiệu không phải phép tính
 - Theo Legendre's Symbol ta có: $(a/p)$ $\equiv a^{(p-1)/2} \pmod p$
-
+  Nếu $(a/p)$ = 1 thì $a$ là quadratic residue.
+  Nếu $(a/p)$ = -1 thì $a$ là quadratic non-residue.
+  Nếu $(a/p)$ = 0 thì $a \euqiv 0 \pmod p$
 ## 3. Python Implementation & Logic
 
 ### **Algorithm Approach:**
