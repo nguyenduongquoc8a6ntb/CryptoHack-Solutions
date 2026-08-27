@@ -26,7 +26,7 @@ p = 29
 ints = [14,6,11]
 roots = []
 
-for x in range(1,p-1):
+for x in range(1,p):
   if x*x % p in ints:
     roots.append(x)
 print(roots)
