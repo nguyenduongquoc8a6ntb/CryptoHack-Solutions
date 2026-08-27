@@ -9,7 +9,7 @@
 <img width="988" height="311" alt="image" src="https://github.com/user-attachments/assets/cef54f4e-c3e8-4b1c-b1d5-94419cef1b6e" />
 
 ## 2. Mathematical Background & Solution
-- Theo Legendre's Symbol ta có: $(a/p) \equiv a^(p-1)/2 \pmod p$
+- Theo Legendre's Symbol ta có: $(a/p) \equiv a^{(p-1)/2} \pmod p$
 
 ## 3. Python Implementation & Logic
 
