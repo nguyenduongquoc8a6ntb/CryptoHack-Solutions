@@ -39,9 +39,9 @@ ints = [250818412046959044758940829741920077186429318110403245431821300888042390
 
 quadratic_residues = []
 for a in ints:
- if pow(a,(p+1)//2,p) == 1:
-  quadratic_residues.append(a)
-for i in a:
- x1 = pow(i,(p+1)//4,p)
- x2 = p - x1
- print(x1,x2)
+    if pow(a,(p+1)//2,p) == 1:
+        quadratic_residues.append(a)
+for i in quadratic_residues:
+    x1 = pow(i,(p+1)//4,p)
+    x2 = p - x1
+    print(x1,x2)
