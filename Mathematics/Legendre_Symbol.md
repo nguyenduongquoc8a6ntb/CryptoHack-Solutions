@@ -19,7 +19,7 @@
   * Số nguyên tố $p$ ($p \neq 2$) chỉ có đúng hai dạng: $p \bmod 4 = 3$ và $p \bmod 4 = 1$.
   * Nếu $a$ là **quadratic residue** thì: $a^{(p-1)/2} \equiv 1 \pmod p$.
   * Để giải được bài toán ta cần tìm $k$ sao cho: $(a^k)^2 \equiv x^2 \equiv a \pmod p \iff a^{2k-1} \equiv 1 \pmod p$.
-  * Kết hợp các dữ kiện ta tính được: $k = (p+1)/4$ ($k \in N$ do $p \bmod 4 = 3$) $\implies x_1 = a^{(p+1)/4} \b và x_2 = p-x_1$
+  * Kết hợp các dữ kiện ta tính được: $k = (p+1)/4$ ($k \in N$ do $p \bmod 4 = 3$) $\implies x_1 = a^{(p+1)/4} \bvà x_2 = p-x_1$
 
 ## 3. Python Implementation & Logic
 
