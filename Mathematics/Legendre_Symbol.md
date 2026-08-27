@@ -24,7 +24,7 @@
 ## 3. Python Implementation & Logic
 
 ### **Algorithm Approach:**
-1. Tải file output.txt
+1. Tải file *output.txt*
 2. Trong file ta sẽ có $p$ và mảng **ints** có chứa $a$ là **quadratic residue**.
 3. Tạo mảng **quadratic_residues** rỗng.
 4. Duyệt từng phần tử trong mảng **ints** nếu $a^{(p-1)/2} \pmod p = 1$ thì thêm $a$ vào danh sách **quadratic_residues**.
@@ -34,7 +34,7 @@
    
 ### **Python Code:**
 > [!CAUTION]
-> Code này áp dụng cho cà trường hợp mảng **ints** có nhiều số $a$ là **quadratic residue**.
+> Code này áp dụng cho cả trường hợp mảng **ints** có nhiều số $a$ là **quadratic residue**.
 ```python
 p = 101524035174539890485408575671085261788758965189060164484385690801466167356667036677932998889725476582421738788500738738503134356158197247473850273565349249573867251280253564698939768700489401960767007716413932851838937641880157263936985954881657889497583485535527613578457628399173971810541670838543309159139
 
