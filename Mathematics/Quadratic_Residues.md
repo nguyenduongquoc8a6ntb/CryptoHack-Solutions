@@ -17,7 +17,7 @@
 ### **Algorithm Approach:**
 1. Tạo danh sách **roots** rỗng.
 2. Chạy vòng lặp với biến $x$ từ 1 đến $p-1$.
-3. Nếu x^2 = a với a là 1 số trong danh sách `[14,6,11]` thì thêm $x$ vào **roots**.
+3. Nếu $x^2 = a$ với a là 1 số trong danh sách `[14,6,11]` thì thêm $x$ vào **roots**.
 4. In ra **roots** sẽ có 2 nghiệm $x$ và $p-x$.
 
 ### **Python Code:**
