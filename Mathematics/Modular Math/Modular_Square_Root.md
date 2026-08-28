@@ -58,14 +58,17 @@
 ## 3. Python Implementation & Logic
 
 ### **Algorithm Approach:**
+> [!CAUTION]
+> Trong thuật toán dưới dùng $b$ để đơn giản hoá bài toán vì $R.b = a^{(Q+1)/2} \iff R^2.b^2 = a.a^Q.b^2$.
+> Ở bước tìm $k$ ta cần dùng 1 biến tạm $t = t_temp$ để tránh làm thay đổi giá trị của $t$.
 1. Tải file output.txt trong file sẽ chứa số a là **quadratic residue** và p.
 2. Tạo hàm tonelli_shanks($a,p$)
 3. Cho chạy vòng lặp để tìm ra $Q,S$.
-4. Đặt $t = a^Q$, $c = z^Q$, $R = (Q+1)/2$, $M = S$.
+4. Đặt $t = a^Q$; $c = z^Q$; $R = a^{(Q+1)/2}$; $M = S$.
 5. Cho chạy vòng lặp **while** với điều kiện $t != 1$.
-6. Trong vòng lặp **while** tạo thêm vòng lặp để cập nhật $k$ mới. (Tìm $k$ bằng cách tính số lần thực tế cần để $t^{2^k} = 1)
+6. Trong vòng lặp **while** tạo thêm vòng lặp để cập nhật $k$ mới. (Tìm $k$ bằng cách tính số lần thực tế cần để $t^2^k = 1)
 7. Tính $b = c^{2^{M-k-1}}$.
-8. Cập nhật các giá trị $R = (R.b) \bmod p$, $c = b^2 \bmod p$, $t = (t.c) \pmod p$, $M = k$
+8. Cập nhật các giá trị $R = (R.b) \bmod p$; $c = b^2 \bmod p$; $t = (t.c) \pmod p$, $M = k$
 
 ### **Python Code:**
 ```python
