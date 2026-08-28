@@ -127,12 +127,12 @@ def tonelli_shanks(a,p):
             t = (t*c) % p
             M = k
 
-        root.append(R)
+        roots.append(R)
         roots.append(p-R)
 
     return roots
 
-print(min(tonelli_sharks(a,p)))
+print(min(tonelli_shanks(a,p)))
 
         
 
