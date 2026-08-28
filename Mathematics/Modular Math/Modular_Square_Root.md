@@ -36,6 +36,15 @@
 
       * Ta dễ dàng nhận thấy để biến $x^2 \equiv R^2 \equiv a \pmod p \iff x^2 \equiv a.a^Q \equiv a \pmod p$ **thì** $a^Q$ phải bằng 1.
       * Mục tiêu bài toán lúc này trở thành làm thế nào để biến $a^Q = 1$ trong $R^2 \equiv a.a^Q \pmod p$.
+        
+        - Ta không thể trực tiếp bình phương 2 vế để làm mất $a^Q$ được vì nó sẽ làm thay đổi biến $a$.
+        - Lúc này thuật toán Tonelli-Shanks sẽ phát huy tác dụng:
+          * Ta cần tìm một số $b^2$ sao cho khi nhân $b^2$ cho cả 2 vế ta sẽ làm cho $a^Q$ nhỏ dần và phải tiến tới 1.
+          * Để tạo ra được $b$ ta cần tìm một số z là **quadratic non-residue**. Ta chọn $z$ vì nó có tính chất $z^Q$ mũ $2^{M-1}$ sẽ ra -1.
+     
+          > 📌 **Lưu ý quan trọng:**
+          > Số bình phương ra số 1 chỉ có -1 và 1
+          > Đối với $a^Q$ thì thường bình phương $2^k$ ($2^k < 2^{S-1}$) là nó đã ra 1 rồi tức là thực tế chỉ cần $(a^Q)^{2^{k-1}}$ là $a^Q$ ra -1
    
     
 ## 3. Python Implementation & Logic
