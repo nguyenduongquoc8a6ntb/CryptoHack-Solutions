@@ -31,8 +31,8 @@
       * Khi đó nghiệm tạm $R \equiv a^{(Q+1)/2} \pmod p$ hay $R^2 \equiv a^{Q+1} = a.a^Q \pmod p$.
 
       > 📌 **Lưu ý quan trọng:**
-      > Ta chọn $2k-1=Q$ vì Q là một số lẻ (nó sẽ làm k nguyên) và khi $(a^Q)^{2^{S-1}}$ chắc chắn ra 1.
-      > Nghiệm tạm thường sẽ chưa phải là nghiệm đúng.
+      > - Ta chọn $2k-1=Q$ vì Q là một số lẻ (nó sẽ làm k nguyên) và khi $(a^Q)^{2^{S-1}}$ chắc chắn ra 1.<br>
+      > - Nghiệm tạm thường sẽ chưa phải là nghiệm đúng.
 
       * Ta dễ dàng nhận thấy để biến $x^2 \equiv R^2 \equiv a \pmod p \iff x^2 \equiv a.a^Q \equiv a \pmod p$ **thì** $a^Q$ phải bằng 1.
       * Mục tiêu bài toán lúc này trở thành làm thế nào để biến $a^Q = 1$ trong $R^2 \equiv a.a^Q \pmod p$.
@@ -44,8 +44,8 @@
           
      
           > 📌 **Lưu ý quan trọng:**
-          > Số bình phương ra số 1 chỉ có -1 và 1.
-          > Đối với $a^Q$ thì thường bình phương $2^k$ ($2^k < 2^{S-1}$) là nó đã ra 1 rồi, tức là thực tế chỉ cần $(a^Q)^{2^{k-1}}$ là ra -1.
+          > - Số bình phương ra số 1 chỉ có -1 và 1.<br>
+          > - Đối với $a^Q$ thì thường bình phương $2^k$ ($2^k < 2^{S-1}$) là nó đã ra 1 rồi, tức là thực tế chỉ cần $(a^Q)^{2^{k-1}}$ là ra -1.
 
           * Muốn cho $a^Q$ và $b^2$ triệt tiêu nhau thì $(a^Q)^{2^{k-1}} = (b^2)^{2^{k-1}} = -1$ khi này $(a^Q)^{2^{k-1}}.(b^2)^{2^{k-1}} = 1$.
             
@@ -59,8 +59,8 @@
 
 ### **Algorithm Approach:**
 > [!CAUTION]
-> *Trong đoạn code dưới dùng $b$ để đơn giản hoá bài toán vì $R.b = a^{(Q+1)/2}.b \iff R^2.b^2 = a.a^Q.b^2$.
-> *Ở bước tìm $k$ ta cần dùng 1 biến tạm $t$ = t_temp để tránh làm thay đổi giá trị của $t$.
+> - Trong đoạn code dưới dùng $b$ để đơn giản hoá bài toán vì $R.b = a^{(Q+1)/2}.b \iff R^2.b^2 = a.a^Q.b^2$.<br>
+> - Ở bước tìm $k$ ta cần dùng 1 biến tạm $t$ = t_temp để tránh làm thay đổi giá trị của $t$.
 1. Tải file output.txt trong file sẽ chứa số a là **quadratic residue** và p.
 2. Tạo hàm tonelli_shanks($a,p$)
 3. Cho chạy vòng lặp để tìm ra $Q,S$.
