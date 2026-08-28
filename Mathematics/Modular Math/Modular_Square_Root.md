@@ -48,7 +48,7 @@
 
           * Muốn cho $a^Q$ và $b^2$ triệt tiêu nhau thì $(a^Q)^{2^{k-1}} = (b^2)^{2^{k-1}} = -1$ khi này $(a^Q)^{2^{k-1}}.(b^2)^{2^{k-1}} = 1$.
             
-            - Mà ta phải gọt $(z^Q)^{2^{M-1}}$ sao cho nó bằng $(b^2)^{2^{k-1}}$ bằng cách biến đổi phương trình $(z^Q)^{2^{M-1}} = (b^2)^{2^{k-1}}$ thành $b^2 = (z^Q)^{2^{M-k}}$ bằng cách đặt $b^2 = (z^Q)^x$ và tìm $x$.
+            - Mà ta phải biến đổi $(z^Q)^{2^{M-1}}$ sao cho nó bằng $(b^2)^{2^{k-1}}$, để làm được điều đó ta cần biến đổi phương trình $(z^Q)^{2^{M-1}} = (b^2)^{2^{k-1}}$ thành $b^2 = (z^Q)^{2^{M-k}}$ bằng cách đặt $b^2 = (z^Q)^x$ và tìm $x$.
            
             - Lúc này ta cho chạy vòng lặp cứ mỗi vòng lặp tìm $k$ mới từ đó suy ra $b^2$ đem nhân với $R^2$ đến khi $a^Q$ và $b^2$ triệt tiêu nhau thì $R^2 \equiv x^2 \equiv a \pmod p \iff x_1 = R \bmod p và x_2 = p - x_1$
 
