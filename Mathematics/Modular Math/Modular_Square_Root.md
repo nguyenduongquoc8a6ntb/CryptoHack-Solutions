@@ -31,7 +31,7 @@ Giải thích thuật toán Tonelli-Shanks:
       * Khi đó nghiệm tạm $R \equiv a^{(Q+1)/2} \pmod p$ hay $R^2 \equiv a^{Q+1} = a.a^Q \pmod p$.
 
       > 📌 **Lưu ý quan trọng:**
-      > - Ta chọn $2k-1=Q$ vì Q là một số lẻ (nó sẽ làm k nguyên) và khi $(a^Q)^{2^{S-1}}$ chắc chắn ra 1 ($(a^Q)^{2^{S-1}} \equiv a^{(p-1)/2} \equiv 1 \pmod p$).<br>
+      > - Ta chọn $2k-1=Q$ vì Q là một số lẻ (nó sẽ làm k nguyên) và khi $(a^Q)^{2^{S-1}}$ chắc chắn ra 1 vì $(a^Q)^{2^{S-1}} \equiv a^{(p-1)/2} \equiv 1 \pmod p$.<br>
       > - Nghiệm tạm thường sẽ chưa phải là nghiệm đúng.
 
       * Ta dễ dàng nhận thấy để biến $x^2 \equiv R^2 \equiv a \pmod p \iff x^2 \equiv a.a^Q \equiv a \pmod p$ **thì** $a^Q$ phải bằng 1.
