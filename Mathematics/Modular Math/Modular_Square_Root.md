@@ -41,6 +41,7 @@
         - Lúc này thuật toán Tonelli-Shanks sẽ phát huy tác dụng:
           * Ta cần tìm một số $b^2$ sao cho khi nhân $b^2$ cho cả 2 vế của phương trình $R^2 \equiv a.a^Q \pmod p$ ta sẽ làm cho $a^Q$ nhỏ dần và phải tiến tới 1.
           * Để tạo ra được $b$ ta cần tìm một số z là **quadratic non-residue**. Ta chọn $z$ vì nó có tính chất $(z^Q)^{2^{M-1}}$ sẽ ra -1.
+          
      
           > 📌 **Lưu ý quan trọng:**
           > Số bình phương ra số 1 chỉ có -1 và 1.
@@ -50,7 +51,7 @@
             
             - Mà ta phải biến đổi $(z^Q)^{2^{M-1}}$ sao cho nó bằng $(b^2)^{2^{k-1}}$, để làm được điều đó ta cần biến đổi phương trình $(z^Q)^{2^{M-1}} = (b^2)^{2^{k-1}}$ thành $b^2 = (z^Q)^{2^{M-k}}$ bằng cách đặt $b^2 = (z^Q)^x$ và tìm $x$.
            
-            - Lúc này ta cho chạy vòng lặp cứ mỗi vòng lặp tìm $k$ mới từ đó suy ra $b^2$ sau đó đem nhân với $R^2$ đến khi $a^Q$ và $b^2$ triệt tiêu nhau thì $R^2 \equiv x^2 \equiv a \pmod p \iff x_1 = R \bmod p$ và $x_2 = p - x_1$
+            - Lúc này ta cho chạy vòng lặp cứ mỗi vòng lặp tìm $k$ mới từ đó suy ra $b^2$ mới sau đó đem nhân với $R^2$ đến khi $a^Q$ và $b^2$ triệt tiêu nhau thì $R^2 \equiv x^2 \equiv a \pmod p \iff x_1 = R \bmod p$ và $x_2 = p - x_1$
 
             
     
