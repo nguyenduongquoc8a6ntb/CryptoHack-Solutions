@@ -59,8 +59,8 @@
 
 ### **Algorithm Approach:**
 > [!CAUTION]
-> Trong thuật toán dưới dùng $b$ để đơn giản hoá bài toán vì $R.b = a^{(Q+1)/2} \iff R^2.b^2 = a.a^Q.b^2$.
-> Ở bước tìm $k$ ta cần dùng 1 biến tạm $t = t_temp$ để tránh làm thay đổi giá trị của $t$.
+> Trong đoạn code dưới dùng $b$ để đơn giản hoá bài toán vì $R.b = a^{(Q+1)/2}.b \iff R^2.b^2 = a.a^Q.b^2$.
+> Ở bước tìm $k$ ta cần dùng 1 biến tạm $t$ = $t$_temp để tránh làm thay đổi giá trị của $t$.
 1. Tải file output.txt trong file sẽ chứa số a là **quadratic residue** và p.
 2. Tạo hàm tonelli_shanks($a,p$)
 3. Cho chạy vòng lặp để tìm ra $Q,S$.
