@@ -13,9 +13,9 @@
 ## Symmetric ciphers
 ## Mathematics
 - Modular Math
-  * [Quadratic Residues](./Mathematics/Modular Math/Quadratic_Residues.md)
-  * [Legendre Symbol](./Mathematics/Legendre_Symbol.md)
-  * [Modular Square Root](./Mathematics/Modular_Square_Root.md)
-  * [Chinese Remainder Theorem](./Mathematics/Chinese_Remainder_Theorem.md)
+  * [Quadratic Residues](./Mathematics/Modular%20Math/Quadratic_Residues.md)
+  * [Legendre Symbol](./Mathematics/Modular%20Math/Legendre_Symbol.md)
+  * [Modular Square Root](./Mathematics/Modular%20Math/Modular_Square_Root.md)
+  * [Chinese Remainder Theorem](./Mathematics/Modular%20Math/Chinese_Remainder_Theorem.md)
 - Brainteasers part 1
 ## RSA
