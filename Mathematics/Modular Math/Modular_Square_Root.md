@@ -19,7 +19,7 @@ Giải thích thuật toán Tonelli-Shanks:
       
       * Ta biết khi $a$ là **quadratic residue** thì $a^{(p-1)/2} \equiv 1 \pmod p$.
       * Biến đổi $(a^k)^2 \equiv a \pmod p$ thành $a^{2k-1} \equiv 1 \pmod p$.
-      * Kết hợp ta thu được: $k = (p+1)/4 \iff x_1 = a^{(p-1)/4} \bmod p$ và $x_2 = p - x_1$.
+      * Kết hợp ta thu được: $k = (p+1)/4 \iff x_1 = a^{(p+1)/4} \bmod p$ và $x_2 = p - x_1$.
     - *Trường hợp 2*: $p \bmod 4 = 1$
       * Mục tiêu lúc này cũng là tìm $k$ sao cho $a^{2k-1} \equiv 1 \pmod p$.
       * Ta liên hệ định lý Fermat nhỏ và thấy $a^{p-1} \equiv a^{2k-1} \equiv 1 \pmod p$.
@@ -63,21 +63,77 @@ Giải thích thuật toán Tonelli-Shanks:
 > - Trong đoạn code dưới dùng $b$ để đơn giản hoá bài toán vì $R.b = a^{(Q+1)/2}.b \iff R^2.b^2 = a.a^Q.b^2$ <br>
 > - Ở bước tìm $k$ ta cần dùng 1 biến tạm $t$ = t_temp để tránh làm thay đổi giá trị của $t$.
 1. Tải file output.txt trong file sẽ chứa số a là **quadratic residue** và p.
-2. Tạo hàm tonelli_shanks($a,p$)
-3. Cho chạy vòng lặp để tìm ra $Q,S$.
-4. Đặt $t = a^Q$; $c = z^Q$; $R = a^{(Q+1)/2}$; $M = S$.
-5. Cho chạy vòng lặp **while** với điều kiện $t != 1$.
-6. Trong vòng lặp **while** tạo thêm vòng lặp để cập nhật $k$ mới. (Tìm $k$ bằng cách tính số lần thực tế cần để $t^2^k = 1)
-7. Tính $b = c^{2^{M-k-1}}$.
-8. Cập nhật các giá trị $R = (R.b) \bmod p$; $c = b^2 \bmod p$; $t = (t.c) \pmod p$, $M = k$
+2. Tạo hàm tonelli_shanks($a,p$).
+3. Tạo mảng rỗng **roots**
+4. Tạo nhánh **if** là trường hợp $p \bmod 4 = 3$.
+5. Tính $x_1 = a^{(p+1)/4} \pmod p$ và $x_2 = p - x_1$ sau đó thêm 2 nghiệm vào **roots**.
+6. Tạo nhánh **else** là trường hợp $p \bmod 4 = 1$.
+7. Cho chạy vòng lặp để tìm ra $Q,S$.
+8. Chạy vòng lặp tìm ra $z$.
+9. Đặt $t = a^Q \bmod p$; $c = z^Q \bmod p$; $R = a^{(Q+1)/2} \bmod p$; $M = S$.
+10. Cho chạy vòng lặp **while** với điều kiện $t != 1$.
+11. Trong vòng lặp **while** tạo thêm vòng lặp để cập nhật $k$ mới. (Tìm $k$ bằng cách tính số lần thực tế cần để $t^2^k = 1)
+12. Tính $b = c^{2^{M-k-1}}$.
+13. Cập nhật các giá trị $R = (R.b) \bmod p$; $c = b^2 \bmod p$; $t = (t.c) \pmod p$, $M = k$.
+14. Thêm 2 nghiệm $x_1 = R$,$x_2 = p - R$ vào danh sách **roots**.
+15. Flag là nghiệm nhỏ hơn.
 
 ### **Python Code:**
 ```python
-p = 29
-ints = [14,6,11]
-roots = []
+a = 8479994658316772151941616510097127087554541274812435112009425778595495359700244470400642403747058566807127814165396640215844192327900454116257979487432016769329970767046735091249898678088061634796559556704959846424131820416048436501387617211770124292793308079214153179977624440438616958575058361193975686620046439877308339989295604537867493683872778843921771307305602776398786978353866231661453376056771972069776398999013769588936194859344941268223184197231368887060609212875507518936172060702209557124430477137421847130682601666968691651447236917018634902407704797328509461854842432015009878011354022108661461024768
+p = 30531851861994333252675935111487950694414332763909083514133769861350960895076504687261369815735742549428789138300843082086550059082835141454526618160634109969195486322015775943030060449557090064811940139431735209185996454739163555910726493597222646855506445602953689527405362207926990442391705014604777038685880527537489845359101552442292804398472642356609304810680731556542002301547846635101455995732584071355903010856718680732337369128498655255277003643669031694516851390505923416710601212618443109844041514942401969629158975457079026906304328749039997262960301209158175920051890620947063936347307238412281568760161
 
-for x in range(1,p):
-    if x*x % p in ints:
-        roots.append(x)
-print(roots)
+def tonelli_shanks(a,p):
+    roots = []
+    if p % 4 == 3:
+        x1 = pow(a,(p+1)//4,p)
+        x2 = p - x1
+        roots.append(x1)
+        roots.append(x2)
+    else:
+
+    # Tìm Q,S
+        Q = p-1
+        S = 0
+        while Q % 2 == 0:
+            Q = Q//2
+            S += 1
+    # Tìm z
+        z = 0
+        for i in range(p):
+            if pow(i,(p-1)//2,p) == p-1:
+                z = i
+                break
+
+        t = pow(a,Q,p)
+        c = pow(z,Q,p)
+        R = pow(a,(Q+1)//2,p)
+        M = S
+        while t != 1:
+        # Tìm k
+            t_temp = t
+            k = 0
+            for i in range(1,M):
+                t_temp = pow(t_temp,2,p)
+                if t_temp == 1:
+                    k = i
+                    break
+        # Tính b
+            b = pow(c,2,M-k-1)
+
+        # Cập nhật biến
+            R = (R*b) % p
+            c = (b*b) % p
+            t = (t*c) % p
+            M = k
+
+        root.append(R)
+        roots.append(p-R)
+
+    return roots
+
+print(min(tonelli_sharks(a,p)))
+
+        
+
+
