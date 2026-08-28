@@ -4,7 +4,7 @@
 - Encoding
   * [ASCII](./General/Encoding/ASCII.md)
   * [Hex](./General/Encoding/Hex.md)
-  * [Base64](./General/Encoding/Base64)
+  * [Base64](./General/Encoding/Base64.md)
   * [Bytes and Big Integers](./General/Encoding/Bytes_and_Big_Integers.md)
 - XOR
   * [XOR Starter](./General/XOR/XOR_Starter.md)
