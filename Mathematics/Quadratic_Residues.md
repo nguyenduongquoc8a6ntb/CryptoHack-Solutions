@@ -28,6 +28,6 @@ ints = [14,6,11]
 roots = []
 
 for x in range(1,p):
-  if x*x % p in ints:
-    roots.append(x)
+    if x*x % p in ints:
+        roots.append(x)
 print(roots)
