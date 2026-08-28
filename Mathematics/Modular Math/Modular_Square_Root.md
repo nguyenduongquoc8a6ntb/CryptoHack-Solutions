@@ -119,7 +119,7 @@ def tonelli_shanks(a,p):
                     k = i
                     break
         # Tính b
-            b = pow(c,2,M-k-1)
+            b = pow(c,2**(M-k-1),p)
 
         # Cập nhật biến
             R = (R*b) % p
