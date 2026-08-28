@@ -5,6 +5,7 @@
   * [ASCII](./General/Encoding/ASCII.md)
   * [Hex](./General/Encoding/Hex.md)
 - XOR
+  * [XOR Starter](./General/XOR/XOR_Starter.md)
 - Mathematics
 - Data formats
 ## Symmetric ciphers
