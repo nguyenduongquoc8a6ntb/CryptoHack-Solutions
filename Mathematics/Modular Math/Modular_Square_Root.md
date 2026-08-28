@@ -28,7 +28,7 @@
       * Do không thể dùng $p-1$ ta quyết định tách phần lẻ $Q$ của $p-1$ gán nó bằng $2k-1$ tức $2k-1 = Q$ để làm nghiệm tạm.
 
       > 📌 **Lưu ý quan trọng:**
-      > Ta chọn $k=Q$ vì Q là một số lẻ và khi $(a^{2k-1})^2^(S-1)$ chắc chắn ra 1.
+      > Ta chọn $k=Q$ vì Q là một số lẻ và khi $(a^Q)^2^{S-1}$ chắc chắn ra 1.
       
     
  
