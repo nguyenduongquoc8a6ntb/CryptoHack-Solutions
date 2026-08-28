@@ -75,7 +75,7 @@ Giải thích thuật toán Tonelli-Shanks:
 11. Trong vòng lặp **while** tạo thêm vòng lặp để cập nhật $k$ mới. (Tìm $k$ bằng cách tính số lần thực tế cần để $t^2^k = 1)
 12. Tính $b = c^{2^{M-k-1}}$.
 13. Cập nhật các giá trị $R = (R.b) \bmod p$; $c = b^2 \bmod p$; $t = (t.c) \pmod p$, $M = k$.
-14. Thêm 2 nghiệm $x_1 = R$,$x_2 = p - R$ vào danh sách **roots**.
+14. Thêm 2 nghiệm $x_1 = R,x_2 = p - R$ vào danh sách **roots**.
 15. Flag là nghiệm nhỏ hơn.
 
 ### **Python Code:**
