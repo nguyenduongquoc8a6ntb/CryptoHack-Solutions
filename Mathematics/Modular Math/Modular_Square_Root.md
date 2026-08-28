@@ -13,7 +13,7 @@
   * Muốn tìm $x$ sao cho $x^2 \equiv a \pmod p$ ta cần tìm $k$ để $x^2 \equiv (a^k)^2 \equiv a \pmod p$.
   * Ta đã biết $p$ ($p \neq 2$) là số nguyên tố và chỉ có 2 dạng $p \bmod 4 = 3$ và $p \bmod 4 = 1$.
     - Trường hợp 1: $p \bmod 4 = 3$
-      >[!CAUTION]
+      > [!CAUTION]
       > Ở TH1 thì k chắc chắn là số nguyên nên ta dễ dàng tìm được k còn TH2 k là một số mũ không nguyên nên ta phải dùng thuật toán Tonelli-Shanks.
       * Ta biết khi $a$ là **quadratic residue** thì $a^{(p-1)/2} \equiv 1 \pmod p$.
       * Biến đổi $(a^k)^2 \equiv a \pmod p$ thành $a^{2k-1} \equiv 1 \pmod p$.
