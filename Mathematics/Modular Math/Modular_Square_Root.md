@@ -58,11 +58,14 @@
 ## 3. Python Implementation & Logic
 
 ### **Algorithm Approach:**
-1. Tạo danh sách **roots** rỗng.
-2. Chạy vòng lặp với biến $x$ từ 1 đến $p-1$.
-3. Nếu $x^2 \bmod p = a$ với a là 1 số trong danh sách `[14,6,11]` thì thêm $x$ vào **roots**.
-4. In ra **roots** sẽ có 2 nghiệm $x$ và $p-x$.
-5. Flag là nghiệm nhỏ hơn.
+1. Tải file output.txt trong file sẽ chứa số a là **quadratic residue** và p.
+2. Tạo hàm tonelli_shanks($a,p$)
+3. Cho chạy vòng lặp để tìm ra $Q,S$.
+4. Đặt $t = a^Q$, $c = z^Q$, $R = (Q+1)/2$, $M = S$.
+5. Cho chạy vòng lặp **while** với điều kiện $t != 1$.
+6. Trong vòng lặp **while** tạo thêm vòng lặp để cập nhật $k$ mới. (Tìm $k$ bằng cách tính số lần thực tế cần để $t^{2^k} = 1)
+7. Tính $b = c^{2^{M-k-1}}$.
+8. Cập nhật các giá trị $R = (R.b) \bmod p$, $c = b^2 \bmod p$, $t = (t.c) \pmod p$, $M = k$
 
 ### **Python Code:**
 ```python
