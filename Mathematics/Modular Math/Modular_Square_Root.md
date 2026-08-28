@@ -12,6 +12,8 @@
 - Giải thích thuật toán Tonelli-Shanks:
   * Muốn tìm $x$ sao cho $x^2 \equiv a \pmod p$ ta cần tìm $k$ để $x^2 \equiv (a^k)^2 \equiv a \pmod p$.
   * Ta đã biết $p$ ($p \neq 2$) là số nguyên tố và chỉ có 2 dạng $p \bmod 4 = 3$ và $p \bmod 4 = 1$.
+    - Trường hợp 1: $p \bmod 4 = 3$
+      * Ta biết khi $a$ là **quadratic residue** thì $a^{(p-1)/2} \equiv 1 \pmod p$
  
 ## 3. Python Implementation & Logic
 
