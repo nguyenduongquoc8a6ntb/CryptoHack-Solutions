@@ -25,8 +25,11 @@
       * Ta liên hệ định lý Fermat nhỏ và thấy $a^{p-1} \equiv a^{2k-1} \equiv 1 \pmod p$.
       * Nhưng nếu gán $2k-1=p-1$ thì $k = p/2$ là một số không nguyên, ta quyết định tách $p-1$ thành $Q.2^S$
         * Để tách $p-1$ thành $Q.2^S$ ta sẽ lấy $p-1$ chia 2 và sau S lần kết quả sẽ là một số lẻ Q.
-      * Do không thể dùng $p-1$ ta quyết định tách phần lẻ Q của $p-1$ gán nó bằng k tức k = Q để làm nghiệm tạm
-     
+      * Do không thể dùng $p-1$ ta quyết định tách phần lẻ $Q$ của $p-1$ gán nó bằng $2k-1$ tức $2k-1 = Q$ để làm nghiệm tạm.
+
+      > 📌 **Lưu ý quan trọng:**
+      > Ta chọn $k=Q$ vì Q là một số lẻ và khi $(a^{2k-1})^2^(S-1)$ chắc chắn ra 1.
+      
     
  
 ## 3. Python Implementation & Logic
