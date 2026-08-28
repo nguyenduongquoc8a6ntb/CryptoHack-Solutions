@@ -29,11 +29,11 @@
           
       * Do không thể dùng $p-1$ ta quyết định tách phần lẻ $Q$ của $p-1$ gán nó bằng $2k-1$ tức $2k-1 = Q$ để làm nghiệm tạm.
       * Khi đó nghiệm tạm $R \equiv a^{(Q+1)/2} \pmod p$ hay $R^2 \equiv a^{Q+1} = a.a^Q \pmod p$.
-<br>
+
       > 📌 **Lưu ý quan trọng:**
       > - Ta chọn $2k-1=Q$ vì Q là một số lẻ (nó sẽ làm k nguyên) và khi $(a^Q)^{2^{S-1}}$ chắc chắn ra 1.<br>
       > - Nghiệm tạm thường sẽ chưa phải là nghiệm đúng.
-<br>
+
       * Ta dễ dàng nhận thấy để biến $x^2 \equiv R^2 \equiv a \pmod p \iff x^2 \equiv a.a^Q \equiv a \pmod p$ **thì** $a^Q$ phải bằng 1.
       * Mục tiêu bài toán lúc này trở thành làm thế nào để biến $a^Q = 1$ trong $R^2 \equiv a.a^Q \pmod p$.
         
@@ -42,11 +42,11 @@
           * Ta cần tìm một số $b^2$ sao cho khi nhân $b^2$ cho cả 2 vế của phương trình $R^2 \equiv a.a^Q \pmod p$ ta sẽ làm cho $a^Q$ nhỏ dần và phải tiến tới 1.
           * Để tạo ra được $b$ ta cần tìm một số z là **quadratic non-residue**. Ta chọn $z$ vì nó có tính chất $(z^Q)^{2^{M-1}}$ sẽ ra -1.
           
-          <br>
+          
           > 📌 **Lưu ý quan trọng:**
           > - Số bình phương ra số 1 chỉ có -1 và 1.<br>
           > - Đối với $a^Q$ thì thường bình phương $2^k$ ($2^k < 2^{S-1}$) là nó đã ra 1 rồi, tức là thực tế chỉ cần $(a^Q)^{2^{k-1}}$ là ra -1.
-          <br>
+          
  
           * Muốn cho $a^Q$ và $b^2$ triệt tiêu nhau thì $(a^Q)^{2^{k-1}} = (b^2)^{2^{k-1}} = -1$ khi này $(a^Q)^{2^{k-1}}.(b^2)^{2^{k-1}} = 1$.
             
