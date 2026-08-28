@@ -34,7 +34,7 @@
       > Ta chọn $2k-1=Q$ vì Q là một số lẻ (nó sẽ làm k nguyên) và khi $a^Q$ mũ $2^{S-1}$ chắc chắn ra 1.
       > Nghiệm tạm thường sẽ chưa phải là nghiệm đúng.
 
-      * Ta dễ dàng nhận thấy để biến $x^2 \equiv R^2 \eqiv a \pmod p \iff x^2 \equiv a.a^Q \equiv a \pmod p$ thì $a^Q$ phải bằng 1.
+      * Ta dễ dàng nhận thấy để biến $x^2 \equiv R^2 \equiv a \pmod p \iff x^2 \equiv a.a^Q \equiv a \pmod p$ thì $a^Q$ phải bằng 1.
 
     
       
