@@ -1,6 +1,12 @@
 # CryptoHack Solutions
 ## Introduction
 ## General
+- Encoding
+  * [ASCII](./General/Encoding/ASCII.md)
+  * [Hex](./General/Encoding/Hex.md)
+- XOR
+- Mathematics
+- Data formats
 ## Symmetric ciphers
 ## Mathematics
 - [Quadratic Residues](./Mathematics/Quadratic_Residues.md)
