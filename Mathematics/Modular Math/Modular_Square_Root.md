@@ -9,7 +9,7 @@
 <img width="997" height="108" alt="image" src="https://github.com/user-attachments/assets/a6c4469b-3c0b-4ea1-a0c7-ec1bd5b0a45c" />
 
 ## 2. Mathematical Background & Solution
-- Giải thích thuật toán Tonelli-Shanks:
+Giải thích thuật toán Tonelli-Shanks:
   * Muốn tìm $x$ sao cho $x^2 \equiv a \pmod p$ ta cần tìm $k$ để $x^2 \equiv (a^k)^2 \equiv a \pmod p$.
   * Ta đã biết $p$ ($p \neq 2$) là số nguyên tố và chỉ có 2 dạng $p \bmod 4 = 3$ và $p \bmod 4 = 1$.
     - *Trường hợp 1*: $p \bmod 4 = 3$
