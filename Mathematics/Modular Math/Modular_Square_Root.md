@@ -31,7 +31,7 @@
       * Khi đó nghiệm tạm $R \equiv a^{(Q+1)/2} \pmod p$ hay $R^2 \equiv a^{Q+1} = a.a^Q \pmod p$.
 
       > 📌 **Lưu ý quan trọng:**
-      > Ta chọn $2k-1=Q$ vì Q là một số lẻ (nó sẽ làm k nguyên) và khi $a^Q$ mũ $2^{S-1}$ chắc chắn ra 1.
+      > Ta chọn $2k-1=Q$ vì Q là một số lẻ (nó sẽ làm k nguyên) và khi $(a^Q)^{2^{S-1}}$ chắc chắn ra 1.
       > Nghiệm tạm thường sẽ chưa phải là nghiệm đúng.
 
       * Ta dễ dàng nhận thấy để biến $x^2 \equiv R^2 \equiv a \pmod p \iff x^2 \equiv a.a^Q \equiv a \pmod p$ **thì** $a^Q$ phải bằng 1.
@@ -40,7 +40,7 @@
         - Ta không thể trực tiếp bình phương 2 vế để làm mất $a^Q$ được vì nó sẽ làm thay đổi biến $a$.
         - Lúc này thuật toán Tonelli-Shanks sẽ phát huy tác dụng:
           * Ta cần tìm một số $b^2$ sao cho khi nhân $b^2$ cho cả 2 vế ta sẽ làm cho $a^Q$ nhỏ dần và phải tiến tới 1.
-          * Để tạo ra được $b$ ta cần tìm một số z là **quadratic non-residue**. Ta chọn $z$ vì nó có tính chất $z^Q$ mũ $2^{M-1}$ sẽ ra -1.
+          * Để tạo ra được $b$ ta cần tìm một số z là **quadratic non-residue**. Ta chọn $z$ vì nó có tính chất $(z^Q)^{2^{M-1}}$ sẽ ra -1.
      
           > 📌 **Lưu ý quan trọng:**
           > Số bình phương ra số 1 chỉ có -1 và 1
