@@ -24,9 +24,11 @@
       * Mục tiêu lúc này cũng là tìm $k$ sao cho $a^{2k-1} \equiv 1 \pmod p$.
       * Ta liên hệ định lý Fermat nhỏ và thấy $a^{p-1} \equiv a^{2k-1} \equiv 1 \pmod p$.
       * Nhưng nếu gán $2k-1=p-1$ thì $k = p/2$ là một số không nguyên, ta quyết định tách $p-1$ thành $Q.2^S$
+        
         - Để tách $p-1$ thành $Q.2^S$ ta sẽ lấy $p-1$ chia 2 và sau S lần kết quả sẽ là một số lẻ Q.
+          
       * Do không thể dùng $p-1$ ta quyết định tách phần lẻ $Q$ của $p-1$ gán nó bằng $2k-1$ tức $2k-1 = Q$ để làm nghiệm tạm.
-      * Khi đó nghiệm tạm $R \equiv a^{(Q+1)/2 \pmod p}$ hay $R^2 \equiv a^{Q+1} = a.a^Q \pmod p$
+      * Khi đó nghiệm tạm $R \equiv a^{(Q+1)/2} \pmod p$ hay $R^2 \equiv a^{Q+1} = a.a^Q \pmod p$.
 
       > 📌 **Lưu ý quan trọng:**
       > Ta chọn $2k-1=Q$ vì Q là một số lẻ (nó sẽ làm k nguyên) và khi $a^Q$ mũ $2^{S-1}$ chắc chắn ra 1.
