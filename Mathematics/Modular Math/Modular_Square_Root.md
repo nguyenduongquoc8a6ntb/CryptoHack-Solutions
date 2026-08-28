@@ -43,8 +43,11 @@
           * Để tạo ra được $b$ ta cần tìm một số z là **quadratic non-residue**. Ta chọn $z$ vì nó có tính chất $(z^Q)^{2^{M-1}}$ sẽ ra -1.
      
           > 📌 **Lưu ý quan trọng:**
-          > Số bình phương ra số 1 chỉ có -1 và 1
-          > Đối với $a^Q$ thì thường bình phương $2^k$ ($2^k < 2^{S-1}$) là nó đã ra 1 rồi tức là thực tế chỉ cần $(a^Q)^{2^{k-1}}$ là $a^Q$ ra -1
+          > Số bình phương ra số 1 chỉ có -1 và 1.
+          > Đối với $a^Q$ thì thường bình phương $2^k$ ($2^k < 2^{S-1}$) là nó đã ra 1 rồi, tức là thực tế chỉ cần $(a^Q)^{2^{k-1}}$ là ra -1.
+
+          * Muốn cho $a^Q$ và $b^2$ triệt tiêu nhau thì $(a^Q)^{2^{k-1}} = (b^2)^{2^{k-1}} = -1$ khi này $(a^Q)^{2^{k-1}}.(b^2)^{2^{k-1}} = 1$.
+            - Mà ta phải gọt $(z^Q)^{2^{M-1}}$ sao cho nó bằng $(b^2)^{2^{k-1}}$ bằng cách biến đổi phương trình $(z^Q)^{2^{M-1}} = (b^2)^{2^{k-1}}$ thành $b^2 = (z^Q)^{2^{M-k}}$ bằng cách đặt $b^2 = (z^Q)^x$ và tìm $x$.
    
     
 ## 3. Python Implementation & Logic
