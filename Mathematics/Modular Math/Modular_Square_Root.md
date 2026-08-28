@@ -12,7 +12,7 @@
 - Giải thích thuật toán Tonelli-Shanks:
   * Muốn tìm $x$ sao cho $x^2 \equiv a \pmod p$ ta cần tìm $k$ để $x^2 \equiv (a^k)^2 \equiv a \pmod p$.
   * Ta đã biết $p$ ($p \neq 2$) là số nguyên tố và chỉ có 2 dạng $p \bmod 4 = 3$ và $p \bmod 4 = 1$.
-    - **Trường hợp 1**: $p \bmod 4 = 3$
+    - *Trường hợp 1*: $p \bmod 4 = 3$
       
       > 📌 **Lưu ý quan trọng:**
       > Ở TH1 thì $k$ chắc chắn là số nguyên nên ta dễ dàng tìm được $k$. Với TH2, $k$ là số mũ không nguyên nên bắt buộc phải dùng thuật toán Tonelli-Shanks.
@@ -20,7 +20,12 @@
       * Ta biết khi $a$ là **quadratic residue** thì $a^{(p-1)/2} \equiv 1 \pmod p$.
       * Biến đổi $(a^k)^2 \equiv a \pmod p$ thành $a^{2k-1} \equiv 1 \pmod p$.
       * Kết hợp ta thu được: $k = (p+1)/4 \iff x_1 = a^{(p-1)/4} \bmod p$ và $x_2 = p - x_1$.
-      * 
+    - *Trường hợp 2*: $p \bmod 4 = 1$
+      * Mục tiêu lúc này cũng là tìm $k$ sao cho $a^{2k-1} \equiv 1 \pmod p$.
+      * Ta liên hệ định lý Fermat nhỏ và thấy $a^{p-1} \equiv a^{2k-1} \equiv 1 \pmod p$.
+      * Nhưng nếu gán $2k-1=p-1$ thì $k = p/2$ là một số không nguyên, ta quyết định tách $p-1$ thành $Q.2^{S-1}$
+     
+    
  
 ## 3. Python Implementation & Logic
 
