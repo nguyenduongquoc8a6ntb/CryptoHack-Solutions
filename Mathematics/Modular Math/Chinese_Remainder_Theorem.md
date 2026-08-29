@@ -49,8 +49,8 @@ Giải thích thuật toán **Chinese Remainder Theorem.**
 5. Chạy tiếp vòng lặp từ 0 đến len(**list_n**).
 6. Mỗi vòng lặp tính ra $N_i = N/n_i$ ; $M_i = N_i^{-1}$ và tính ra $x_i$.
 7. Thêm $x_i$ vào **list_x**.
-8. In ra **sum**(list_x).
-9. Flag chính là $x$.
+8. In ra $x \bmod N$.
+9. Flag chính là kết quả.
 
 ### **Python Code:**
 ```python
@@ -73,7 +73,7 @@ def crt(list_a,list_n):
 
         list_x.append(xi)
 
-    return sum(list_x)
+    return sum(list_x) % N
 
 print(crt(list_a,list_n))
 
