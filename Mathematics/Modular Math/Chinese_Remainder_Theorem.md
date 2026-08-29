@@ -30,7 +30,13 @@ Giải thích thuật toán **Chinese Remainder Theorem.**
     > $x \bmod n_n = a_n$
     
   - Muốn chia $x$ cho bất kỳ số $n_i$ để dư $a_i$ ta cần phải tách $x = x_1 + x_2 + x_3 + ... + x_n$ với $x_i$ chia $n_i$ dư $a_i$ và $x_i$ chia hết cho $n_j (n_j \neq n_i)$.
-  - 
+  - Để tạo ra $x_i$ ta cần thực hiện 3 bước:
+    - Tạo ra $N_i = N/n_i$, số $N_i$ lúc này sẽ chia hết cho mọi số khác $n_i$
+      
+    > Lưu ý: $N_i$ lúc này chia cho $n_i$ sẽ ra một số dư nào đó
+    - Để $N_i \bmod n_i = 1$ thì ta cần tìm số $M_i$ sao cho $N_i.M_i \bmod n_i = 1 \iff N_i.M_i \equiv 1 \pmod p$ hay nói cách khác $M_i$ chính là nghịch đảo mudular của $N_i$.
+    - Do $N_i.M_i \bmod n_i = 1$ ta chỉ cần nhân thêm $a_i$ là tạo ra $x_i$ thoả mãn. $x_i = N_i.M_i.a_i$
+    
 ## 3. Python Implementation & Logic
 
 ### **Algorithm Approach:**
