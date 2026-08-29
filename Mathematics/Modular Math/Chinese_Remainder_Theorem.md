@@ -34,7 +34,8 @@ Giải thích thuật toán **Chinese Remainder Theorem.**
     
     - Tạo ra $N_i$ bằng cách lấy $N/n_i$, số $N_i$ lúc này sẽ chia hết cho mọi số khác $n_i$.
       
-    > Lưu ý: $N_i$ lúc này chia cho $n_i$ sẽ ra một số dư nào đó.
+      > Lưu ý: $N_i$ lúc này chia cho $n_i$ sẽ ra một số dư nào đó.
+      
     - Để $N_i \bmod n_i = 1$ thì ta cần tìm số $M_i$ sao cho $N_i.M_i \bmod n_i = 1 \iff N_i.M_i \equiv 1 \pmod p$ hay nói cách khác $M_i$ chính là nghịch đảo mudular của $N_i$.
     - Do $N_i.M_i \bmod n_i = 1$ ta chỉ cần nhân thêm $a_i$ là tạo ra $x_i$ thoả mãn $(x_i = N_i.M_i.a_i)$.
     
