@@ -10,6 +10,10 @@
 
 ## 2. Mathematical Background & Solution
 Giải thích thuật toán **Chinese Remainder Theorem.**
+
+> [!CAUTION]
+> Thuật toán này áp dụng cho các số $n_i$ nguyên tố cùng nhau đôi một ($\gcd(n_i, n_j) = 1$).
+
 - Cho:
   
   > $x \equiv a_1 \pmod {n_1}$ <br>
