@@ -42,11 +42,14 @@ Giải thích thuật toán **Chinese Remainder Theorem.**
 ## 3. Python Implementation & Logic
 
 ### **Algorithm Approach:**
-1. Tạo danh sách **roots** rỗng.
-2. Chạy vòng lặp với biến $x$ từ 1 đến $p-1$.
-3. Nếu $x^2 \bmod p = a$ với a là 1 số trong danh sách `[14,6,11]` thì thêm $x$ vào **roots**.
-4. In ra **roots** sẽ có 2 nghiệm $x$ và $p-x$.
-5. Flag là nghiệm nhỏ hơn.
+1. Theo đề bài ta có **list_a** = [2,3,5] và **list_n** = [5,11,17].
+2. Tạo hàm **ctr**(list_a,list_n).
+3. Tạo mảng **list_x** rỗng
+4. Chạy vòng lặp tính ra $N = n_1*n_2*n_3*n_4*...*n_n$.
+5. Chạy tiếp vòng lặp từ 0 đến len(**list_n**).
+6. Mỗi vòng lặp tính ra $N_i = N/n_i$; $M_i = N_i^{-1}$ và tính ra $x_i$.
+7. Thêm $x_i$ vào **list_x**.
+8. In ra **sum**(list_x).
 
 ### **Python Code:**
 ```python
