@@ -32,7 +32,7 @@ Giải thích thuật toán **Chinese Remainder Theorem.**
   - Muốn chia $x$ cho bất kỳ số $n_i$ để dư $a_i$ ta cần phải tách $x = x_1 + x_2 + x_3 + ... + x_n$ với $x_i$ chia $n_i$ dư $a_i$ và $x_i$ chia hết cho $n_j (n_j \neq n_i)$.
   - Để tạo ra $x_i$ ta cần thực hiện 3 bước:
     
-    - Tạo ra $N_i$ bằng cách lấy $N/n_i$, số $N_i$ lúc này sẽ chia hết cho mọi số khác $n_i$.
+    - Tạo ra $N_i$ bằng cách lấy $N/n_i$ , số $N_i$ lúc này sẽ chia hết cho mọi số $n_j$ khác $n_i$.
       
       > Lưu ý: $N_i$ lúc này chia cho $n_i$ sẽ ra một số dư nào đó.
       
