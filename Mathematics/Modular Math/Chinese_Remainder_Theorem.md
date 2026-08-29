@@ -10,7 +10,7 @@
 
 ## 2. Mathematical Background & Solution
 - Thuật toán Chinese Remainder Theorem như sau:
-  > $x \equiv a_1 \pmod n_1$ <br>
+  > $x \equiv a_1 \pmod {n_1}$ <br>
   > $x \equiv a_2 \pmod n_2$ <br>
   > $x \equiv a_3 \pmod n_3$ <br>
   > ...... <br>
