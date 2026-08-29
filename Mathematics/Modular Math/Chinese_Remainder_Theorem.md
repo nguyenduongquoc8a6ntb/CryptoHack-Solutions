@@ -68,12 +68,12 @@ def crt(list_a,list_n):
     for i in range(len(list_n)):
         # Tính Ni, Mi, xi
         Ni = N//list_n[i]
-        Mi = pow(Ni,-1,p)
+        Mi = pow(Ni,-1,list_n[i])
         xi = Ni*Mi*list_a[i]
 
         list_x.append(xi)
 
-  return sum(list_x)
+    return sum(list_x)
 
 print(crt(list_a,list_n))
 
