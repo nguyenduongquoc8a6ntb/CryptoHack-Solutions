@@ -40,6 +40,7 @@ Giải thích thuật toán Tonelli-Shanks:
         * Ta không thể trực tiếp bình phương 2 vế để làm mất $a^Q$ được vì nó sẽ làm thay đổi biến $a$.
         * Lúc này thuật toán Tonelli-Shanks sẽ phát huy tác dụng:
           * Ta cần tìm một số $b^2$ sao cho khi nhân $b^2$ cho cả 2 vế của phương trình $R^2 \equiv a.a^Q \pmod p$ ta sẽ làm cho $a^Q$ nhỏ dần và phải tiến tới 1.
+            
           * Để tạo ra được $b$ ta cần tìm một số z là **quadratic non-residue**. Ta chọn $z$ vì nó có tính chất $(z^Q)^{2^{M-1}}$ sẽ ra -1. <br>
           
           
