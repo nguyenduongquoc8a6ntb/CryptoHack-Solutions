@@ -25,7 +25,7 @@ Giải thích thuật toán **Chinese Remainder Theorem.**
     > $x \bmod n_3 = a_3$ <br>
     > ...... <br>
     > $x \bmod n_n = a_n$
-  - Muốn chia $x$ cho bất kỳ số $n_i$ để dư $a_i$ ta cần phải tách $x = x_1 + x_2 + x_3 + ... + x_n$ với $x_i chia n_i dư a_i$ và x_i chia hết cho n_j (n_j \neq n_i).
+  - Muốn chia $x$ cho bất kỳ số $n_i$ để dư $a_i$ ta cần phải tách $x = x_1 + x_2 + x_3 + ... + x_n$ với $x_i$ chia $n_i$ dư $a_i$ và $x_i$ chia hết cho $n_j (n_j \neq n_i)$.
   - 
 ## 3. Python Implementation & Logic
 
