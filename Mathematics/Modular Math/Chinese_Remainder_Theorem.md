@@ -43,7 +43,7 @@ Giải thích thuật toán **Chinese Remainder Theorem.**
 
 ### **Algorithm Approach:**
 1. Theo đề bài ta có **list_a** = [2,3,5] và **list_n** = [5,11,17].
-2. Tạo hàm **ctr**(list_a,list_n).
+2. Tạo hàm **crt**(list_a,list_n).
 3. Tạo mảng **list_x** rỗng
 4. Chạy vòng lặp tính ra $N = n_1.n_2.n_3.n_4....n_n$.
 5. Chạy tiếp vòng lặp từ 0 đến len(**list_n**).
@@ -53,12 +53,28 @@ Giải thích thuật toán **Chinese Remainder Theorem.**
 
 ### **Python Code:**
 ```python
-p = 29
-ints = [14,6,11]
-roots = []
+list_a = [2,3,5]
+list_n = [5,11,17]
 
-for x in range(1,p):
-    if x*x % p in ints:
-        roots.append(x)
-print(roots)
+def crt(list_a,list_n):
+    list_x = []
+
+    # Tính N
+    for i in list_n:
+        N = N*i
+
+    for i in range(len(list_n)):
+        # Tính Ni
+        Ni = N//list_n[i]
+
+        # Tính Mi
+        Mi = pow(Ni,-1,p)
+
+        # Tính xi
+        xi = Ni*Mi*list_a[i]
+
+        list_x.append(xi)
+
+  return sum(list_x)
+
 
