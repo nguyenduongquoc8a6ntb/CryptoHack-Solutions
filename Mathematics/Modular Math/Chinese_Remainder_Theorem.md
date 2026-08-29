@@ -36,7 +36,7 @@ Giải thích thuật toán **Chinese Remainder Theorem.**
       
       > Lưu ý: $N_i$ lúc này chia cho $n_i$ sẽ ra một số dư nào đó.
       
-    - Để $N_i \bmod n_i = 1$ thì ta cần tìm số $M_i$ sao cho $(N_i.M_i) \bmod n_i = 1 \iff N_i.M_i \equiv 1 \pmod p$ hay nói cách khác $M_i$ chính là nghịch đảo mudular của $N_i$.
+    - Để $N_i \bmod n_i = 1$ thì ta cần tìm số $M_i$ sao cho $(N_i.M_i) \bmod n_i = 1 \iff N_i.M_i \equiv 1 \pmod {n_i}$ hay nói cách khác $M_i$ chính là nghịch đảo modular của $N_i$.
     - Do $(N_i.M_i) \bmod n_i = 1$ ta chỉ cần nhân thêm $a_i$ là tạo ra $x_i$ thoả mãn $(x_i = N_i.M_i.a_i)$.
     
 ## 3. Python Implementation & Logic
@@ -49,8 +49,8 @@ Giải thích thuật toán **Chinese Remainder Theorem.**
 5. Chạy tiếp vòng lặp từ 0 đến len(**list_n**).
 6. Mỗi vòng lặp tính ra $N_i = N/n_i$ ; $M_i = N_i^{-1}$ và tính ra $x_i$.
 7. Thêm $x_i$ vào **list_x**.
-8. In ra $x \bmod N$.
-9. Flag chính là kết quả.
+8. In ra $x \bmod N$ vì $x = \sum x_i \pmod N$.
+9. Flag chính là kết quả. 
 
 ### **Python Code:**
 ```python
