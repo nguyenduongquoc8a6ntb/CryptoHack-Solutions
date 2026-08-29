@@ -47,7 +47,7 @@ Giải thích thuật toán **Chinese Remainder Theorem.**
 3. Tạo mảng **list_x** rỗng
 4. Chạy vòng lặp tính ra $N = n_1.n_2.n_3.n_4....n_n$.
 5. Chạy tiếp vòng lặp từ 0 đến len(**list_n**).
-6. Mỗi vòng lặp tính ra $N_i = N/n_i$; $M_i = N_i^{-1}$ và tính ra $x_i$.
+6. Mỗi vòng lặp tính ra $N_i = N/n_i$ ; $M_i = N_i^{-1}$ và tính ra $x_i$.
 7. Thêm $x_i$ vào **list_x**.
 8. In ra **sum**(list_x).
 
