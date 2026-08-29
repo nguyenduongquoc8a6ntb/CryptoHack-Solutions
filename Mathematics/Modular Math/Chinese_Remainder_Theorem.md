@@ -50,6 +50,7 @@ Giải thích thuật toán **Chinese Remainder Theorem.**
 6. Mỗi vòng lặp tính ra $N_i = N/n_i$ ; $M_i = N_i^{-1}$ và tính ra $x_i$.
 7. Thêm $x_i$ vào **list_x**.
 8. In ra **sum**(list_x).
+9. Flag chính là $x$.
 
 ### **Python Code:**
 ```python
@@ -60,6 +61,7 @@ def crt(list_a,list_n):
     list_x = []
 
     # Tính N
+    N = 1
     for i in list_n:
         N = N*i
 
@@ -73,4 +75,5 @@ def crt(list_a,list_n):
 
   return sum(list_x)
 
+print(crt(list_a,list_n))
 
