@@ -12,7 +12,7 @@
 Giải thích thuật toán **Chinese Remainder Theorem.**
 
 > [!CAUTION]
-> Thuật toán này áp dụng cho các số $n_i$ nguyên tố cùng nhau đôi một ($\gcd(n_i, n_j) = 1$).
+> Thuật toán này chỉ áp dụng cho các số $n_i$ nguyên tố cùng nhau đôi một ($\gcd(n_i, n_j) = 1$).
 
 - Cho:
   
