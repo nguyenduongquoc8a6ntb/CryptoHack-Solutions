@@ -23,7 +23,7 @@ Giải thích thuật toán Tonelli-Shanks:
     - *Trường hợp 2*: $p \bmod 4 = 1$
       * Mục tiêu lúc này cũng là tìm $r$ sao cho $a^{2r-1} \equiv 1 \pmod p$.
       * Ta liên hệ định lý Fermat nhỏ và thấy $a^{p-1} \equiv a^{2r-1} \equiv 1 \pmod p$.
-      * Nhưng nếu gán $2r-1=p-1$ thì $k = p/2$ là một số không nguyên, ta quyết định tách $p-1$ thành $Q.2^S$
+      * Nhưng nếu gán $2r-1=p-1$ thì $r = p/2$ là một số không nguyên, ta quyết định tách $p-1$ thành $Q.2^S$
         
         - Để tách $p-1$ thành $Q.2^S$ ta sẽ lấy $p-1$ chia 2 và sau S lần kết quả sẽ là một số lẻ Q.
           
