@@ -8,6 +8,10 @@
   * [Bytes and Big Integers](./General/Encoding/Bytes_and_Big_Integers.md)
 - XOR
   * [XOR Starter](./General/XOR/XOR_Starter.md)
+  * [XOR Properties](./General/XOR/XOR_Properties.md)
+  * [Favourite byte](./General/XOR/Favourite_byte.md)
+  * [You either know, XOR you don't](./General/XOR/You_either_know,_XOR_you_don't.md)
+  * [Lemur XOR](./General/XOR/Lemur_XOR.md)
 - Mathematics
 - Data formats
 ## Symmetric ciphers
