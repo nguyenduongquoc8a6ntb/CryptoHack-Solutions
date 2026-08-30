@@ -35,7 +35,7 @@
      - Trong thuật toán Tonelli-Shanks khi lấy $R$ nhân $b$ thì $R.b = a^{(Q+1)/2}.b \iff R^2.b^2=a.a^Q.b^2 = a.t.b^2$ ta thấy ẩn $a$ luôn không thay đổi và đó là bản chất cốt lõi của thuật toán này.
        
        > Nhưng để duy trì sự bất biến của phương trình $R^2.b^2=a.t.b^2$ ta không chọn số b ngẫu nhiên. <br>
-       > Trước đó ta cần làm rõ bậc của $t$. Bắt đầu từ tiêu chuẩn Euler ta biết rằng $a^{(p-1)/2} = a^{Q.2^{S-1}} = (a^Q)^{2^{S-1}} = t^2^{S-1} \equiv 1 \pmod p$ tức là $t$ mũ tối đa $2^{S-1}$ lần sẽ ra 1. Nhưng trên thực tế thì t mũ $2^k$ lần đã ra 1 rồi hay nói cách khác $t^2^{k-1}=-1 (k\leq S-1)$
+       > Trước đó ta cần làm rõ bậc của $t$. Bắt đầu từ tiêu chuẩn Euler ta biết rằng $a^{(p-1)/2} = a^{Q.2^{S-1}} = (a^Q)^{2^{S-1}} = t^{2^{S-1}} \equiv 1 \pmod p$ tức là $t$ mũ tối đa $2^{S-1}$ lần sẽ ra 1. Nhưng trên thực tế thì t mũ $2^k$ lần đã ra 1 rồi hay nói cách khác $t^{2^{k-1}}=-1 (k \leq S-1)$
    
    
     
