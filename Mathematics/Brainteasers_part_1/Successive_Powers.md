@@ -18,8 +18,10 @@
       > $\iff$ $a^{2r-1} \equiv 1 \pmod p$ <br>
       > Kết hợp với tiêu chuẩn Euler: $a^{(p-1)/2} \equiv 1 \pmod p$ <br>
       > Ta thu được: $2r-1 = (p+1)/2 \iff r = (p+1)/4$ <br>
-      > Thay vào phương trình ban đầu: $x \equiv \pm a^{(p+1)/4} \iff x_1 \equiv a^{(p+1)/4} \pmod p$ và $x_2 = p - x_1$. 
-
+      > Thay vào phương trình ban đầu: $x \equiv \pm a^{(p+1)/4} \iff x_1 \equiv a^{(p+1)/4} \pmod p$ và $x_2 = p - x_1$.
+      
+    - Vậy ta tìm được 2 nghiệm $x$: $x_1 = a^{(p+1)/4}$ và $x_2 = p - x_1$.
+ - *Trường hợp 2:* $p \bmod 1$
             
     
 ## 3. Python Implementation & Logic
