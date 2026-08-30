@@ -13,6 +13,11 @@
   * [You either know, XOR you don't](./General/XOR/You_either_know,_XOR_you_don't.md)
   * [Lemur XOR](./General/XOR/Lemur_XOR.md)
 - Mathematics
+  * [Greatest Common Divisor]
+  * [Extended GCD]
+  * [Modular Arithmetic 1]
+  * [Modular Arithmetic 2]
+  * [Modular Inverting]
 - Data formats
 ## Symmetric ciphers
 ## Mathematics
