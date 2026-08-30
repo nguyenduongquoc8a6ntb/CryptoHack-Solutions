@@ -32,7 +32,7 @@
         > - Để tìm ra $Q$ ta lấy $p-1$ chia cho 2 và sau $S$ lần ta thu được số lẻ $Q$. <br>
         > - Khi này $R \equiv a^r = a^{(Q+1)/2} \iff R^2 \equiv (a^r)^2 = a.a^Q \pmod p$ <br>
 
-      - Trong thuật toán Tonelli-Shanks khi lấy $R$ nhân $b$ thì $R.b = a^{(Q+1)/2}.b \iff R^2.b^2=a.a^Q.b^2 = a.t.b^2$ ta thấy ẩn $a$ luôn không thay đổi và đó là bản chất cốt lõi của thuật toán này. Đây là lý do tại sao chúng ta không thể bình phương 2 vế vì nó sẽ làm biến $a$ bị thay đổi.
+      - Trong thuật toán Tonelli-Shanks khi lấy $R$ nhân $b$ thì $R.b = a^{(Q+1)/2}.b \iff R^2.b^2=a.a^Q.b^2 = a.t.b^2$ ta thấy ẩn $a$ luôn không thay đổi và đó chính là bản chất cốt lõi của thuật toán này. Đây là lý do tại sao chúng ta không thể bình phương 2 vế vì nó sẽ làm biến $a$ bị thay đổi.
        
         > - Nhưng để duy trì sự bất biến của phương trình $R^2.b^2=a.t.b^2$ ta không chọn số b ngẫu nhiên. <br>
         >
