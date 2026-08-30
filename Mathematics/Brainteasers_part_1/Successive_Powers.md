@@ -22,7 +22,10 @@
       
     - Vậy ta tìm được 2 nghiệm $x$: $x_1 \equiv a^{(p+1)/4} \pmod p$ và $x_2 \equiv p - x_1 \pmod p$.
  - *Trường hợp 2:* $p \bmod 4 = 1$
-   - Trong trường hợp này ta không thể dùng tiêu chuẩn Euler để tìm $r$ vì $r \notin N$. 
+   - Trong trường hợp này ta không thể dùng tiêu chuẩn Euler để tìm $r$ vì $r \notin N$.
+   - Thay vào đó ta đặt $r = Q$ với $Q$ là phần lẻ khi tách $p-1$ thành $Q.2^S$
+     
+     > Để tìm ra $Q$ ta lấy $p-1$ chia cho 2 và sau $S$ lần ta thu được số lẻ $Q$.
    
     
 ## 3. Python Implementation & Logic
