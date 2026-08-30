@@ -10,7 +10,7 @@
 
 ## 2. Mathematical Background & Solution
 - Trong dạng bài lần này mục tiêu của chúng ta tiếp tục là tìm ra $x$ sao cho $x^2 \equiv a \pmod p$ biết $a$ là **quadratic residue**.
-- Do mọi số nguyên tố p với (p /neq 2)
+- Do mọi số nguyên tố p với (p \ne 2)
 
             
     
