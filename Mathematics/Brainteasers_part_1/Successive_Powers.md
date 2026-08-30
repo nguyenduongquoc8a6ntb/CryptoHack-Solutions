@@ -42,7 +42,7 @@
         >
         > - Ta chọn số z là **quadratic non-residue** vì $(z^Q)^{2^{M-1}} \equiv -1 \pmod p$ "ta chứng minh tương tự từ tiêu chuẩn Euler đối với số **quadratic non-residue**". Lúc này ta cần gọt số mũ của $z^Q$ hay $c$ sao cho nó thành $(b^2)^{2^{k-1}}$. <br>
         >
-        > - Đặt $b^2=c^x$ và thay vào phương trình $(b^2)^{2^{k-1}} = c^{2^{M-1}}$ ta thu được $c^{x.2^{k-1}} = c^{2^{M-1}} \iff x = M-k$. Thay lại $x$ thu được $b^2 = c^{M-k} \iff b = c^{M-k-1}$.
+        > - Đặt $b^2=c^x$ và thay vào phương trình $(b^2)^{2^{k-1}} = c^{2^{M-1}}$ ta thu được $c^{x.2^{k-1}} = c^{2^{M-1}} \iff x = M-k$. Thay lại $x$ ta thu được $b^2 = c^{M-k} \iff b = c^{M-k-1}$.
    
     - Sau khi cho chạy thuật toán đến vòng lặp cuối cùng thì $x_1 = R$ và $x_2 = p - x_1$.
   
