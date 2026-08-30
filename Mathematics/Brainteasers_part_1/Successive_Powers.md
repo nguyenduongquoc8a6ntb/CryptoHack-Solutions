@@ -26,8 +26,9 @@
    - Thay vào đó ta sẽ dùng thuật toán Tonelli-Shanks để tìm ra nghiệm tạm $R$ và biến đổi nó thành nghiệm đúng $x$ bằng cách nhân $b$.
    - Ta đặt $2r -1 = Q \iff r=(Q+1)/2$ với $Q$ là phần lẻ khi tách $p-1$ thành $Q.2^S$
      
-     > Để tìm ra $Q$ ta lấy $p-1$ chia cho 2 và sau $S$ lần ta thu được số lẻ $Q$.
-     > Khi này $R^2 \equiv (a^r)^2 = a.a^Q \pmod p$ 
+     > Để tìm ra $Q$ ta lấy $p-1$ chia cho 2 và sau $S$ lần ta thu được số lẻ $Q$. <br>
+     > Khi này $R \equiv a^r = a^{(Q+1)/2} \iff R^2 \equiv (a^r)^2 = a.a^Q \pmod p$ <br>
+     > 
    
    
     
