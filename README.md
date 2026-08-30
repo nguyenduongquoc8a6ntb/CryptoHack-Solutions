@@ -24,7 +24,7 @@
 - Modular Math
   * [Quadratic Residues](./Mathematics/Modular%20Math/Quadratic_Residues.md)
   * [Legendre Symbol](./Mathematics/Modular%20Math/Legendre_Symbol.md)
-  * [Modular Square Root](./Mathematics/Modular%20Math/Modular_Square_Root2.md)
+  * [Modular Square Root](./Mathematics/Modular%20Math/Modu;lar_Square_Root2.md)
   * [Chinese Remainder Theorem](./Mathematics/Modular%20Math/Chinese_Remainder_Theorem.md)
 - Brainteasers part 1
 ## RSA
