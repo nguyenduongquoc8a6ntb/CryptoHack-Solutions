@@ -23,28 +23,28 @@
     - Vậy ta tìm được 2 nghiệm $x$: $x_1 \equiv a^{(p+1)/4} \pmod p$ và $x_2 \equiv p - x_1 \pmod p$.
   - *Trường hợp 2:* $p \bmod 4 = 1$
    
-    > Chú thích: $a^Q = t$ ; $z^Q = c$ <br>
+     > Chú thích: $a^Q = t$ ; $z^Q = c$ <br>
     
-   - Trong trường hợp này ta không thể dùng tiêu chuẩn Euler để tìm $r$ vì $r \notin N$.
-   - Thay vào đó ta sẽ dùng thuật toán Tonelli-Shanks để cập nhật nghiệm tạm $R$ bằng cách nhân nó với $b$ nhằm triệt tiêu sai số $t$ về 1, từ đó biến nghiệm tạm thành nghiệm đúng ($x \equiv R \pmod p$) cụ thể:
-     - Ta đặt: $2r -1 = Q \iff r=(Q+1)/2$ với $Q$ là phần lẻ khi tách $p-1$ thành $Q.2^S$
+    - Trong trường hợp này ta không thể dùng tiêu chuẩn Euler để tìm $r$ vì $r \notin N$.
+    - Thay vào đó ta sẽ dùng thuật toán Tonelli-Shanks để cập nhật nghiệm tạm $R$ bằng cách nhân nó với $b$ nhằm triệt tiêu sai số $t$ về 1, từ đó biến nghiệm tạm thành nghiệm đúng ($x \equiv R \pmod p$) cụ thể:
+      - Ta đặt: $2r -1 = Q \iff r=(Q+1)/2$ với $Q$ là phần lẻ khi tách $p-1$ thành $Q.2^S$
        
-       > - Để tìm ra $Q$ ta lấy $p-1$ chia cho 2 và sau $S$ lần ta thu được số lẻ $Q$. <br>
-       > - Khi này $R \equiv a^r = a^{(Q+1)/2} \iff R^2 \equiv (a^r)^2 = a.a^Q \pmod p$ <br>
+        > - Để tìm ra $Q$ ta lấy $p-1$ chia cho 2 và sau $S$ lần ta thu được số lẻ $Q$. <br>
+        > - Khi này $R \equiv a^r = a^{(Q+1)/2} \iff R^2 \equiv (a^r)^2 = a.a^Q \pmod p$ <br>
 
-     - Trong thuật toán Tonelli-Shanks khi lấy $R$ nhân $b$ thì $R.b = a^{(Q+1)/2}.b \iff R^2.b^2=a.a^Q.b^2 = a.t.b^2$ ta thấy ẩn $a$ luôn không thay đổi và đó là bản chất cốt lõi của thuật toán này. Đây là lý do tại sao chúng ta không thể bình phương 2 vế vì nó sẽ làm biến $a$ bị thay đổi.
+      - Trong thuật toán Tonelli-Shanks khi lấy $R$ nhân $b$ thì $R.b = a^{(Q+1)/2}.b \iff R^2.b^2=a.a^Q.b^2 = a.t.b^2$ ta thấy ẩn $a$ luôn không thay đổi và đó là bản chất cốt lõi của thuật toán này. Đây là lý do tại sao chúng ta không thể bình phương 2 vế vì nó sẽ làm biến $a$ bị thay đổi.
        
-       > - Nhưng để duy trì sự bất biến của phương trình $R^2.b^2=a.t.b^2$ ta không chọn số b ngẫu nhiên. <br>
-       >
-       > - Trước đó ta cần làm rõ bậc của $t$. Bắt đầu từ tiêu chuẩn Euler ta biết rằng $a^{(p-1)/2} = a^{Q.2^{S-1}} = (a^Q)^{2^{S-1}} = t^{2^{S-1}} \equiv 1 \pmod p$ tức là $t$ mũ tối đa $2^{S-1}$ lần sẽ ra 1. Nhưng trên thực tế thì t mũ $2^k$ lần đã ra 1 rồi hay nói cách khác $t^{2^{k-1}}=-1 (k \leq S-1)$ <br>
-       >
-       > - Để triệt tiêu dần biến $t$ thì ta phải chọn số $b^2$ cũng có bậc là $(k-1)$ vì $t^{2^{k-1}}.(b^2)^{2^{k-1}}=-1.-1=1$. <br>
-       >
-       > - Ta chọn số z là **quadratic non-residue** vì $(z^Q)^{2^{M-1}} \equiv -1 \pmod p$ "ta chứng minh tương tự từ tiêu chuẩn Euler đối với số **quadratic non-residue**". Lúc này ta cần gọt số mũ của $z^Q$ hay $c$ sao cho nó thành $(b^2)^{2^{k-1}}$. <br>
-       >
-       > - Đặt $b^2=c^x$ và thay vào phương trình $(b^2)^{2^{k-1}} = c^{2^{M-1}}$ ta thu được $c^{x.2^{k-1}} = c^{2^{M-1}} \iff x = M-k$. Thay lại $x$ thu được $b^2 = c^{M-k} \iff b = c^{M-k-1}$.
+        > - Nhưng để duy trì sự bất biến của phương trình $R^2.b^2=a.t.b^2$ ta không chọn số b ngẫu nhiên. <br>
+        >
+        > - Trước đó ta cần làm rõ bậc của $t$. Bắt đầu từ tiêu chuẩn Euler ta biết rằng $a^{(p-1)/2} = a^{Q.2^{S-1}} = (a^Q)^{2^{S-1}} = t^{2^{S-1}} \equiv 1 \pmod p$ tức là $t$ mũ tối đa $2^{S-1}$ lần sẽ ra 1. Nhưng trên thực tế thì t mũ $2^k$ lần đã ra 1 rồi hay nói cách khác $t^{2^{k-1}}=-1 (k \leq S-1)$ <br>
+        >
+        > - Để triệt tiêu dần biến $t$ thì ta phải chọn số $b^2$ cũng có bậc là $(k-1)$ vì $t^{2^{k-1}}.(b^2)^{2^{k-1}}=-1.-1=1$. <br>
+        >
+        > - Ta chọn số z là **quadratic non-residue** vì $(z^Q)^{2^{M-1}} \equiv -1 \pmod p$ "ta chứng minh tương tự từ tiêu chuẩn Euler đối với số **quadratic non-residue**". Lúc này ta cần gọt số mũ của $z^Q$ hay $c$ sao cho nó thành $(b^2)^{2^{k-1}}$. <br>
+        >
+        > - Đặt $b^2=c^x$ và thay vào phương trình $(b^2)^{2^{k-1}} = c^{2^{M-1}}$ ta thu được $c^{x.2^{k-1}} = c^{2^{M-1}} \iff x = M-k$. Thay lại $x$ thu được $b^2 = c^{M-k} \iff b = c^{M-k-1}$.
    
-   - Sau khi cho chạy thuật toán đến vòng lặp cuối cùng thì $x_1 = R$ và $x_2 = p - x_1$.
+    - Sau khi cho chạy thuật toán đến vòng lặp cuối cùng thì $x_1 = R$ và $x_2 = p - x_1$.
   
 ## 3. Python Implementation & Logic
 
