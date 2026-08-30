@@ -21,7 +21,7 @@
       > - Thay vào phương trình ban đầu: $x \equiv \pm a^{(p+1)/4} \iff x_1 \equiv a^{(p+1)/4} \pmod p$ và $x_2 \equiv -x_1 \equiv -x_1 + p \pmod p$.
       
     - Vậy ta tìm được 2 nghiệm $x$: $x_1 \equiv a^{(p+1)/4} \pmod p$ và $x_2 \equiv p - x_1 \pmod p$.
- - *Trường hợp 2:* $p \bmod 4 = 1$
+  - *Trường hợp 2:* $p \bmod 4 = 1$
    
     > Chú thích: $a^Q = t$ ; $z^Q = c$ <br>
     
