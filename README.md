@@ -13,7 +13,7 @@
   * [You either know, XOR you don't](./General/XOR/You_either_know,_XOR_you_don't.md)
   * [Lemur XOR](./General/XOR/Lemur_XOR.md)
 - Mathematics
-  * [Greatest Common Divisor]
+  * [Greatest Common Divisor](./General/Mathematics/Greatest_Common_Divisor.md)
   * [Extended GCD](./General/Mathematics/Extended_GCD.md)
   * [Modular Arithmetic 1]
   * [Modular Arithmetic 2]
