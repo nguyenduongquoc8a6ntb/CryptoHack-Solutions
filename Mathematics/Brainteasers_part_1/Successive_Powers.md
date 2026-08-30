@@ -24,10 +24,11 @@
  - *Trường hợp 2:* $p \bmod 4 = 1$
    
     > Chú thích: $a^Q = t$ ; $z^Q = c$ <br>
+    
    - Trong trường hợp này ta không thể dùng tiêu chuẩn Euler để tìm $r$ vì $r \notin N$.
-     
    - Thay vào đó ta sẽ dùng thuật toán Tonelli-Shanks để cập nhật nghiệm tạm $R$ bằng cách nhân nó với $b$ nhằm triệt tiêu sai số $t$ về 1, từ đó biến nghiệm tạm thành nghiệm đúng ($x \equiv R \pmod p$) cụ thể:
      - Ta đặt: $2r -1 = Q \iff r=(Q+1)/2$ với $Q$ là phần lẻ khi tách $p-1$ thành $Q.2^S$
+       
      
       > Để tìm ra $Q$ ta lấy $p-1$ chia cho 2 và sau $S$ lần ta thu được số lẻ $Q$. <br>
       > Khi này $R \equiv a^r = a^{(Q+1)/2} \iff R^2 \equiv (a^r)^2 = a.a^Q \pmod p$ <br>
