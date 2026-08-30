@@ -32,7 +32,7 @@
        > - Để tìm ra $Q$ ta lấy $p-1$ chia cho 2 và sau $S$ lần ta thu được số lẻ $Q$. <br>
        > - Khi này $R \equiv a^r = a^{(Q+1)/2} \iff R^2 \equiv (a^r)^2 = a.a^Q \pmod p$ <br>
 
-     - Trong thuật toán Tonelli-Shanks khi lấy $R$ nhân $b$ thì $R.b = a^{(Q+1)/2}.b \iff R^2.b^2=a.a^Q.b^2 = a.t.b^2$ ta thấy ẩn $a$ luôn không thay đổi và đó là bản chất cốt lõi của thuật toán này.
+     - Trong thuật toán Tonelli-Shanks khi lấy $R$ nhân $b$ thì $R.b = a^{(Q+1)/2}.b \iff R^2.b^2=a.a^Q.b^2 = a.t.b^2$ ta thấy ẩn $a$ luôn không thay đổi và đó là bản chất cốt lõi của thuật toán này. Đây là lý do tại sao chúng ta không thể bình phương 2 vế vì nó sẽ làm biến $a$ bị thay đổi.
        
        > - Nhưng để duy trì sự bất biến của phương trình $R^2.b^2=a.t.b^2$ ta không chọn số b ngẫu nhiên. <br>
        >
@@ -44,14 +44,17 @@
        >
        > - Đặt $b^2=c^x$ và thay vào phương trình $(b^2)^{2^{k-1}} = c^{2^{M-1}}$ ta thu được $c^{x.2^{k-1}} = c^{2^{M-1}} \iff x = M-k$. Thay lại $x$ thu được $b^2 = c^{M-k} \iff b = c^{M-k-1}$.
    
-   
-    
+   - Sau khi cho chạy thuật toán đến vòng lặp cuối cùng thì $x_1 = R$ và $x_2 = p - x_1$.
+  
 ## 3. Python Implementation & Logic
 
 ### **Algorithm Approach:**
 > [!CAUTION]
-> - Trong đoạn code dưới dùng $b$ để đơn giản hoá bài toán vì $R.b = a^{(Q+1)/2}.b \iff R^2.b^2 = a.a^Q.b^2$ <br>
-> - Ở bước tìm $k$ ta cần dùng 1 biến tạm $t$ = t_temp để tránh làm thay đổi giá trị của $t$.
+> - Bản chất dùng $b$ hay $b^2$ là như nhau tuỳ theo phương trình $R.b = a^{(Q+1)/2}.b \iff R^2.b^2=a.a^Q.b^2$. Trên phần giải thích tôi dùng $b^2$ để giải thích rõ sự triệt tiêu $t$, còn dưới code tôi dùng $b$ để code không quá phức tạp. <br>
+> - Mỗi vòng lặp ta phải tìm lại số $k$ mới để tạo ra $b$ mới vì $t$ không phải lúc nào cũng hạ từng bậc, có lúc hạ nhiều bậc. <br>
+> - Trong trường hữu hạn $Z_p$ thì gần một nửa số là **quadratic non-residue** nên cho chạy vòng lặp từ 1 đến p vẫn ổn nhưng vẫn khuyến khích xài random số hơn. <br>
+> - Ở bước tìm $k$ ta cần dùng 1 biến tạm t_temp = $t$ để tránh làm thay đổi giá trị của $t$.
+
 1. Tải file output.txt trong file sẽ chứa số a là **quadratic residue** và p.
 2. Tạo hàm tonelli_shanks($a,p$).
 3. Tạo mảng rỗng **roots**
