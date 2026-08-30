@@ -14,7 +14,7 @@
   * [Lemur XOR](./General/XOR/Lemur_XOR.md)
 - Mathematics
   * [Greatest Common Divisor]
-  * [Extended GCD]
+  * [Extended GCD](./General/Mathematics/Extended_GCD.md)
   * [Modular Arithmetic 1]
   * [Modular Arithmetic 2]
   * [Modular Inverting]
