@@ -11,17 +11,17 @@
 ## 2. Mathematical Background & Solution
 - Trong dạng bài lần này mục tiêu của chúng ta tiếp tục là tìm ra $x$ sao cho $x^2 \equiv a \pmod p$ biết $a$ là **quadratic residue**.
 - Do mọi số nguyên tố $p$ với ($p \neq 2$) luôn có 2 dạng $p \bmod 4 = 3$ và $p \bmod 4 = 1$ ta sẽ phân tích từng trường hợp để tìm ra $x$:
-  - *Trường hợp 1:* $p \bmod = 3$
+  - *Trường hợp 1:* $p \bmod 4 = 3$
     - Ta cần tìm $r$ sao cho $x^2 \equiv (a^r)^2 \equiv a \pmod p$.
       
       > Ta có: $(a^r)^2 \equiv a \pmod p$ <br>
       > $\iff$ $a^{2r-1} \equiv 1 \pmod p$ <br>
       > Kết hợp với tiêu chuẩn Euler: $a^{(p-1)/2} \equiv 1 \pmod p$ <br>
       > Ta thu được: $2r-1 = (p+1)/2 \iff r = (p+1)/4$ <br>
-      > Thay vào phương trình ban đầu: $x \equiv \pm a^{(p+1)/4} \iff x_1 \equiv a^{(p+1)/4} \pmod p$ và $x_2 = p - x_1$.
+      > Thay vào phương trình ban đầu: $x \equiv \pm a^{(p+1)/4} \iff x_1 \equiv a^{(p+1)/4} \pmod p$ và $x_2 equiv p - x_1 \pmod p$.
       
-    - Vậy ta tìm được 2 nghiệm $x$: $x_1 = a^{(p+1)/4}$ và $x_2 = p - x_1$.
- - *Trường hợp 2:* $p \bmod 1$
+    - Vậy ta tìm được 2 nghiệm $x$: $x_1 \equiv a^{(p+1)/4} \pmod p$ và $x_2 \equiv p - x_1 \pmod p$.
+ - *Trường hợp 2:* $p \bmod 4 = 1$
             
     
 ## 3. Python Implementation & Logic
