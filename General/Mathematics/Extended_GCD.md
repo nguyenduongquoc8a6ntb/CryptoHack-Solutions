@@ -44,21 +44,12 @@
 > [!CAUTION]
 > Để tạo ra $r_1$ ta cần đặt $a = a.1 + b.0$ và $b = a.0 + b.1$ khi này $r_1 = a.(1-0.q_1) + b.(0-1.q_1)$
 
-1. Tải file output.txt trong file sẽ chứa số a là **quadratic residue** và p.
-2. Tạo hàm tonelli_shanks($a,p$).
-3. Tạo mảng rỗng **roots**
-4. Tạo nhánh **if** là trường hợp $p \bmod 4 = 3$.
-5. Tính $x_1 = a^{(p+1)/4} \pmod p$ và $x_2 = p - x_1$ sau đó thêm 2 nghiệm vào **roots**.
-6. Tạo nhánh **else** là trường hợp $p \bmod 4 = 1$.
-7. Cho chạy vòng lặp để tìm ra $Q,S$.
-8. Chạy vòng lặp tìm ra $z$.
-9. Đặt $t = a^Q \bmod p$; $c = z^Q \bmod p$; $R = a^{(Q+1)/2} \bmod p$; $M = S$.
-10. Cho chạy vòng lặp **while** với điều kiện $t != 1$.
-11. Trong vòng lặp **while** tạo thêm vòng lặp để cập nhật $k$ mới. (Tìm $k$ bằng cách tính số lần thực tế cần để $t^2^k = 1)
-12. Tính $b = c^{2^{M-k-1}}$.
-13. Cập nhật các giá trị $R = (R.b) \bmod p$; $c = b^2 \bmod p$; $t = (t.c) \pmod p$, $M = k$.
-14. Thêm 2 nghiệm $x_1 = R, x_2 = p - R$ vào danh sách **roots**.
-15. Flag là nghiệm nhỏ hơn.
+1. Tạo hàm **extended_gcd**(a,b).
+2. Đặt $x_0 = 1$; $x_1 = 0$; $y_0 = 0$ và $y_1 = 1$.
+3. Cho chạy vòng lặp **while** với điều kiện $b \neq 0$.
+4. Mỗi vòng lặp tính $q_n$ và cập nhật $a = b & b = a \bmod b$. Tiếp đó cập nhật $x_n = x_{n-2}-x_{n-1}.q_n$ và $y_n = y_{n-2}-y_{n-1}.q_n$.
+5. Khi vòng lặp kết thúc thì $a = gcd(a,b)$, $b=0$ và tìm được x,y.
+6. Flag là **min**(x,y).
 
 ### **Python Code:**
 ```python
