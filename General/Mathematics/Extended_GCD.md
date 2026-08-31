@@ -47,7 +47,7 @@
 1. Tạo hàm **extended_gcd**(a,b).
 2. Đặt $x_0 = 1$; $x_1 = 0$; $y_0 = 0$ và $y_1 = 1$.
 3. Cho chạy vòng lặp **while** với điều kiện $b \neq 0$.
-4. Mỗi vòng lặp tính $q_n$ và cập nhật $a = b & b = a \bmod b$. Tiếp đó cập nhật $x_n = x_{n-2}-x_{n-1}.q_n$ và $y_n = y_{n-2}-y_{n-1}.q_n$.
+4. Mỗi vòng lặp tính $q_n$ và cập nhật $a = b$ , $b = a \bmod b$. Tiếp đó cập nhật $x_n = x_{n-2}-x_{n-1}.q_n$ và $y_n = y_{n-2}-y_{n-1}.q_n$.
 5. Khi vòng lặp kết thúc thì $a = gcd(a,b)$, $b=0$ và tìm được x,y.
 6. Flag là **min**(x,y).
 
