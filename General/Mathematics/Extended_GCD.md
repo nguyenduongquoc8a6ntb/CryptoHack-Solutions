@@ -21,8 +21,8 @@
     
     > - Bắt đầu bằng thao tác: $(a \bmod b = r_1) \to (b \bmod r_1 = r_2) \to (r_1 \bmod r_2 = r_3) \to ... \to (r_{n-2} mod r_{n-1} = r_n)$ khi đó $r_{n-1}$ chính là $gcd(a,b)$. <br>
     > - Ta có thể viết lại mỗi thao tác chia lấy dư thành: <br>
-    >   $a$ <br>
-    >   $b$ <br>
+    >   $a = a$ <br>
+    >   $b = b$ <br>
     >   $r_1 = a - b.q_1$ <br>
     >   $r_2 = b - r_1.q_2$ <br>
     >   $r_3 = r_1 - r_2.q_3$ <br>
