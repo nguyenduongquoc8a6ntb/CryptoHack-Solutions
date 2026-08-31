@@ -42,9 +42,9 @@
 
 ### **Algorithm Approach:**
 > [!CAUTION]
-> Để tạo ra $r_1$ ta cần đặt $a = a.1 + b.0$ và $b = a.0 + b.1$ khi này $r_1 = a.(1-0.q_1) + b.(0-1.q_1)$ <br>
-> $a$ lớn hơn $b$ hay ngược lại không quan trọng vì thuật toán sẽ tự động điều chỉnh để thực hiện phép tính. <br>
-> Với đề bài trên người ta dùng $p,q$ để thay cho $a,b$ và dùng $u,v$ để thay $x,y$.
+> - Để tạo ra $r_1$ ta cần đặt $a = a.1 + b.0$ và $b = a.0 + b.1$ khi này $r_1 = a.(1-0.q_1) + b.(0-1.q_1)$ <br>
+> - $a$ lớn hơn $b$ hay ngược lại không quan trọng vì thuật toán sẽ tự động điều chỉnh để thực hiện phép tính. <br>
+> - Với đề bài trên người ta dùng $p,q$ để thay cho $a,b$ và dùng $u,v$ để thay $x,y$.
 
 1. Tạo hàm **extended_gcd**(a,b).
 2. Đặt $x_0 = 1$ , $x_1 = 0$ , $y_0 = 0$ và $y_1 = 1$.
