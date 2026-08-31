@@ -11,9 +11,9 @@
 ## 2. Mathematical Background & Solution
 
 > Chú thích: <br>
-> $a$, $b$ là hai số cần tìm $gcd(a,b)$. <br>
-> $r_n$ là số dư. <br>
-> $q_n$ là thương số.
+> - $a$, $b$ là hai số cần tìm $gcd(a,b)$. <br>
+> - $r_n$ là số dư. <br>
+> - $q_n$ là thương số.
 
 - Thuật toán Euclid mở rộng là thuật toán giúp ta tìm ra $x$, $y$ và $gcd(a,b)$ biết **$a.x+b.y = gcd(a,b)$**. Cụ thể:
   
@@ -21,11 +21,11 @@
     
     > - Bắt đầu bằng thao tác $a \bmod b = r_1 \to b \bmod r_1 = r_2 \to r_1\bmod r_2 = r_3 ... \to r_{n-2} mod r_{n-1} = r_n$ khi đó $r_{n-1}$ chính là $gcd(a,b)$. <br>
     > - Ta có thể viết lại mỗi thao tác chia lấy dư thành: <br>
-    >   $r_1 = a - b.q_1$
-    >   $r_2 = b - r_1.q_2$
-    >   $r_3 = r_1 - r_2.q_3$
-    >   ......
-    >   $r_n = r_{n-2} - r_{n-1}.q_n$
+    >   $r_1 = a - b.q_1$ <br>
+    >   $r_2 = b - r_1.q_2$ <br>
+    >   $r_3 = r_1 - r_2.q_3$ <br>
+    >   ...... <br>
+    >   $r_n = r_{n-2} - r_{n-1}.q_n$ 
   
 ## 3. Python Implementation & Logic
 
