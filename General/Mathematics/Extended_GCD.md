@@ -36,7 +36,7 @@
     >
     > $\iff r_n = a.[(x_{n-2}) - (x_{n-1}).q_n] + b.[(y_{n-2}) - (y_{n-1}).q_n]$
 
-  - Như vậy cứ mỗi vòng lặp ta cập nhật biến $x_n$, $y_n$ tương ứng. Thì ở vòng lặp cuối ta sẽ thu được $a.x + b.y = gcd(a,b)$ với $x = x_n$, $y = y_n$ và $gcd(a,b) = r_{n-1}$.
+  - Như vậy cứ mỗi vòng lặp ta cập nhật biến $x_n$, $y_n$ tương ứng. Thì ở vòng lặp cuối ta sẽ thu được $a.x + b.y = gcd(a,b)$ với $x = x_n$ , $y = y_n$ và $gcd(a,b) = r_{n-1}$.
     
 ## 3. Python Implementation & Logic
 
