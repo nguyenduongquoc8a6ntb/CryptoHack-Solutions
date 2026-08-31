@@ -25,7 +25,7 @@
     >   $r_2 = b - r_1.q_2$ <br>
     >   $r_3 = r_1 - r_2.q_3$ <br>
     >   ...... <br>
-    >   $r_n = r_{n-2} - r_{n-1}.q_n$ 
+    >   $r_n = (r_{n-2}) - (r_{n-1}).q_n$ 
   
 ## 3. Python Implementation & Logic
 
