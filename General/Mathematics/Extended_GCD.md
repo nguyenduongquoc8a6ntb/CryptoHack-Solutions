@@ -19,7 +19,7 @@
   
   - Ta đã biết trong thuật toán Euclid thì ta sẽ thực hiện thao tác chia lấy dư giữa 2 số $a$ và $b$ đến khi số dư bằng 0 ta tìm được $gcd(a,b)$.
     
-    > - Bắt đầu bằng thao tác $a \bmod b = r_1 \to b \bmod r_1 = r_2 \to r_1\bmod r_2 = r_3 ... \to r_{n-2} mod r_{n-1} = r_n$ khi đó $r_{n-1}$ chính là $gcd(a,b)$. <br>
+    > - Bắt đầu bằng thao tác $(a \bmod b = r_1) \to (b \bmod r_1 = r_2) \to (r_1 \bmod r_2 = r_3) ... \to (r_{n-2} mod r_{n-1} = r_n)$ khi đó $r_{n-1}$ chính là $gcd(a,b)$. <br>
     > - Ta có thể viết lại mỗi thao tác chia lấy dư thành: <br>
     >   $r_1 = a - b.q_1$ <br>
     >   $r_2 = b - r_1.q_2$ <br>
