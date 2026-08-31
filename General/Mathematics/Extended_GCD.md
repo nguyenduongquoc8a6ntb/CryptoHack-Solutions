@@ -9,7 +9,7 @@
 <img width="983" height="178" alt="image" src="https://github.com/user-attachments/assets/b2230c5a-9bfc-482b-b408-fc6ac657f427" />
 
 ## 2. Mathematical Background & Solution
-- Thuật toán Euclid mở rộng là thuật toán giúp ta tìm ra $x, y, gcd(a,b)$ biết $a.x+b.y = gcd(a,b)$.
+- Thuật toán Euclid mở rộng là thuật toán giúp ta tìm ra $x$, $y$ và $gcd(a,b)$ biết **$a.x+b.y = gcd(a,b)$**.
   
 ## 3. Python Implementation & Logic
 
