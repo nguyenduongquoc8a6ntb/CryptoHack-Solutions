@@ -30,11 +30,11 @@
   - Thuật toán Euclid cho chúng ta biết hai dữ kiện quan trọng: $r_n = a.x_n + b.y_n$ và $r_n = (r_{n-2}) - (r_{n-1}).q_n$
   - Kết hợp hai dữ kiện trên ta thu được:
     
-    >  $r_n = (a.x_{n-2} + b.y_{n-2}) - (a.x_{n-1} + b.y_{n-1}).q_{n-1}$ <br>
+    >  $r_n = (a.x_{n-2} + b.y_{n-2}) - (a.x_{n-1} + b.y_{n-1}).q_n$ <br>
     >
-    > $\iff r_n = a.x_{n-2} + b.y_{n-2} - a.x_{n-1}.q_{n-1} - b.y_{n-1}.q_{n-1}$ <br>
+    > $\iff r_n = a.x_{n-2} + b.y_{n-2} - a.x_{n-1}.q_n - b.y_{n-1}.q_n$ <br>
     >
-    > $\iff r_n = a.[(x_{n-2}) - (x_{n-1}).q_{n-1}] + b.[(y_{n-2}) - (y_{n-1}).q_{n-1}]$
+    > $\iff r_n = a.[(x_{n-2}) - (x_{n-1}).q_n] + b.[(y_{n-2}) - (y_{n-1}).q_n]$
 
   - Như vậy cứ mỗi vòng lặp ta cập nhật biến $x_n$, $y_n$ tương ứng. Thì ở vòng lặp cuối ta sẽ thu được $a.x + b.y = gcd(a,b)$ với $x = x_n$, $y = y_n$ và $gcd(a,b) = r_{n-1}$.
     
