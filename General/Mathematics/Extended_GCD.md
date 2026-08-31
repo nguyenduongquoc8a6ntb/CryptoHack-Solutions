@@ -11,7 +11,7 @@
 ## 2. Mathematical Background & Solution
 
 > Chú thích: <br>
-> - $a$, $b$ là hai số cần tìm $gcd(a,b)$. <br>
+> - $a$ và $b$ là hai số cần tìm $gcd(a,b)$. <br>
 > - $r_n$ là số dư. <br>
 > - $q_n$ là thương số.
 
