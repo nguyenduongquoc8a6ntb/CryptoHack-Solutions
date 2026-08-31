@@ -17,17 +17,19 @@
 
 - Thuật toán Euclid mở rộng là thuật toán giúp ta tìm ra $x$, $y$ và $gcd(a,b)$ biết **$a.x+b.y = gcd(a,b)$**. Cụ thể:
   
-  - Ta đã biết trong thuật toán Euclid thì ta sẽ thực hiện thao tác chia lấy dư giữa 2 số $a$ và $b$ đến khi số dư bằng 0 ta tìm được $gcd(a,b)$.
+  - Chúng ta đã biết trong thuật toán Euclid ta sẽ thực hiện thao tác chia lấy dư giữa 2 số $a$ và $b$ (a,b được cập nhật liên tục) đến khi số dư bằng 0 ta tìm được $gcd(a,b)$.
     
     > - Bắt đầu bằng thao tác: $(a \bmod b = r_1) \to (b \bmod r_1 = r_2) \to (r_1 \bmod r_2 = r_3) \to ... \to (r_{n-2} mod r_{n-1} = r_n)$ khi đó $r_{n-1}$ chính là $gcd(a,b)$. <br>
     > - Ta có thể viết lại mỗi thao tác chia lấy dư thành: <br>
-    >   $a = a$ <br>
-    >   $b = b$ <br>
     >   $r_1 = a - b.q_1$ <br>
     >   $r_2 = b - r_1.q_2$ <br>
     >   $r_3 = r_1 - r_2.q_3$ <br>
     >   ...... <br>
-    >   $r_n = (r_{n-2}) - (r_{n-1}).q_n$ 
+    >   $r_n = (r_{n-2}) - (r_{n-1}).q_n$
+
+  - Thuật toán Euclid cho chúng ta biết hai dữ kiện quan trọng: $r_n = a.x_n + b.y_n$ và $r_n = (r_{n-2}) - (r_{n-1}).q_n$
+  - Kết hợp hai dữ kiện trên ta thu được:
+    > $r_n = (a.x_{n-2}+b.y_{n-2}) - (a.x_{n-1}+b.y_{n-1})$.
   
 ## 3. Python Implementation & Logic
 
