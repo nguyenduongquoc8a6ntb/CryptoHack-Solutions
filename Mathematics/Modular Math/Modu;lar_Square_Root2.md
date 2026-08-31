@@ -64,7 +64,7 @@
 7. Cho chạy vòng lặp để tìm ra $Q,S$.
 8. Chạy vòng lặp tìm ra $z$.
 9. Đặt $t = a^Q \bmod p$; $c = z^Q \bmod p$; $R = a^{(Q+1)/2} \bmod p$; $M = S$.
-10. Cho chạy vòng lặp **while** với điều kiện $t != 1$.
+10. Cho chạy vòng lặp **while** với điều kiện $t \neq 1$.
 11. Trong vòng lặp **while** tạo thêm vòng lặp để cập nhật $k$ mới. (Tìm $k$ bằng cách tính số lần thực tế cần để $t^{2^k} = 1$)
 12. Tính $b = c^{2^{M-k-1}}$.
 13. Cập nhật các giá trị $R = (R.b) \bmod p$; $c = b^2 \bmod p$; $t = (t.c) \pmod p$, $M = k$.
