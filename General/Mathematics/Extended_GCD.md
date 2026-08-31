@@ -9,11 +9,13 @@
 <img width="983" height="178" alt="image" src="https://github.com/user-attachments/assets/b2230c5a-9bfc-482b-b408-fc6ac657f427" />
 
 ## 2. Mathematical Background & Solution
-
 > Chú thích: <br>
 > - $a$ và $b$ là hai số cần tìm $gcd(a,b)$. <br>
 > - $r_n$ là số dư. <br>
 > - $q_n$ là thương số.
+
+> [!CAUTION]
+> Thuật toán Euclid mở rộng dùng được cho mọi số a,b không cần là hai số nguyên tố cùng nhau.
 
 - Thuật toán Euclid mở rộng là thuật toán giúp ta tìm ra $x$, $y$ và $gcd(a,b)$ biết **$a.x+b.y = gcd(a,b)$**. Cụ thể:
   
