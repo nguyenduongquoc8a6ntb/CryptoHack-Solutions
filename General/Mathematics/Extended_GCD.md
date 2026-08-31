@@ -31,8 +31,10 @@
   - Kết hợp hai dữ kiện trên ta thu được:
     
     > - $r_n = (a.x_{n-2} + b.y_{n-2}) - (a.x_{n-1} + b.y_{n-1})$ <br>
+    
     > $\iff r_n = a.x_{n-2} + b.y_{n-2} - a.x_{n-1} - b.y_{n-1}$ <br>
-    > $\iff r_n = a.[(x_{n-2}) - x_({n-1})] + b.[(y_{n-2}) - (y_{n-1})]$
+    
+    > $\iff r_n = a.[(x_{n-2}) - (x_{n-1})] + b.[(y_{n-2}) - (y_{n-1})]$
 
   - d
   - 
