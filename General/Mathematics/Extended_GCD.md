@@ -1,1 +1,40 @@
+# Modular Square Root
 
+* **Category:** General
+* **Points:** 20
+* **Source:** CryptoHack
+
+---
+## 1. Description
+<img width="983" height="178" alt="image" src="https://github.com/user-attachments/assets/b2230c5a-9bfc-482b-b408-fc6ac657f427" />
+
+## 2. Mathematical Background & Solution
+- Thuật toán Euclid mở rộng là thuật toán giúp ta tìm ra $x,\by,\bgcd(a,b)$ biết $a.x+b.y = gcd(a,b)$.
+  
+## 3. Python Implementation & Logic
+
+### **Algorithm Approach:**
+> [!CAUTION]
+> - Bản chất dùng $b$ hay $b^2$ là như nhau tuỳ theo phương trình $R.b = a^{(Q+1)/2}.b \iff R^2.b^2=a.a^Q.b^2$. Trên phần giải thích tôi dùng $b^2$ để giải thích rõ sự triệt tiêu $t$, còn dưới code tôi dùng $b$ để code không quá phức tạp. <br>
+> - Mỗi vòng lặp ta phải tìm lại số $k$ mới để tạo ra $b$ mới vì $t$ không phải lúc nào cũng hạ từng bậc, có lúc hạ nhiều bậc. <br>
+> - Trong trường hữu hạn $Z_p$ thì gần một nửa số là **quadratic non-residue** nên cho chạy vòng lặp từ 1 đến p vẫn ổn nhưng vẫn khuyến khích dùng random số hơn. <br>
+> - Ở bước tìm $k$ ta cần dùng 1 biến tạm t_temp = $t$ để tránh làm thay đổi giá trị của $t$.
+
+1. Tải file output.txt trong file sẽ chứa số a là **quadratic residue** và p.
+2. Tạo hàm tonelli_shanks($a,p$).
+3. Tạo mảng rỗng **roots**
+4. Tạo nhánh **if** là trường hợp $p \bmod 4 = 3$.
+5. Tính $x_1 = a^{(p+1)/4} \pmod p$ và $x_2 = p - x_1$ sau đó thêm 2 nghiệm vào **roots**.
+6. Tạo nhánh **else** là trường hợp $p \bmod 4 = 1$.
+7. Cho chạy vòng lặp để tìm ra $Q,S$.
+8. Chạy vòng lặp tìm ra $z$.
+9. Đặt $t = a^Q \bmod p$; $c = z^Q \bmod p$; $R = a^{(Q+1)/2} \bmod p$; $M = S$.
+10. Cho chạy vòng lặp **while** với điều kiện $t != 1$.
+11. Trong vòng lặp **while** tạo thêm vòng lặp để cập nhật $k$ mới. (Tìm $k$ bằng cách tính số lần thực tế cần để $t^2^k = 1)
+12. Tính $b = c^{2^{M-k-1}}$.
+13. Cập nhật các giá trị $R = (R.b) \bmod p$; $c = b^2 \bmod p$; $t = (t.c) \pmod p$, $M = k$.
+14. Thêm 2 nghiệm $x_1 = R, x_2 = p - R$ vào danh sách **roots**.
+15. Flag là nghiệm nhỏ hơn.
+
+### **Python Code:**
+```python
