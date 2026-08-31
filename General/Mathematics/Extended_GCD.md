@@ -42,14 +42,38 @@
 
 ### **Algorithm Approach:**
 > [!CAUTION]
-> Để tạo ra $r_1$ ta cần đặt $a = a.1 + b.0$ và $b = a.0 + b.1$ khi này $r_1 = a.(1-0.q_1) + b.(0-1.q_1)$
+> Để tạo ra $r_1$ ta cần đặt $a = a.1 + b.0$ và $b = a.0 + b.1$ khi này $r_1 = a.(1-0.q_1) + b.(0-1.q_1)$ <br>
+> $a$ lớn hơn $b$ hay ngược lại không quan trọng vì thuật toán sẽ tự động điều chỉnh để thực hiện phép tính. <br>
+> Với đề bài trên người ta dùng $p,q$ để thay cho $a,b$ và dùng $u,v$ để thay $x,y$.
 
 1. Tạo hàm **extended_gcd**(a,b).
 2. Đặt $x_0 = 1$ , $x_1 = 0$ , $y_0 = 0$ và $y_1 = 1$.
 3. Cho chạy vòng lặp **while** với điều kiện $b \neq 0$.
 4. Mỗi vòng lặp tính $q_n$ và cập nhật $a = b$ , $b = a \bmod b$. Tiếp đó cập nhật $x_n = (x_{n-2})-(x_{n-1}).q_n$ và $y_n = (y_{n-2})-(y_{n-1}).q_n$.
-5. Khi vòng lặp kết thúc thì $a = gcd(a,b)$, $b=0$ và tìm được x,y.
+5. Khi vòng lặp kết thúc thì $a = gcd(a,b)$ , $b=0$ và tìm được $x = x_0$ , $y = y_0$.
 6. Flag là **min**(x,y).
 
 ### **Python Code:**
 ```python
+p = 26513
+q = 32321
+
+def extended_gcd(a,b): # a.x + b.y = gcd(a,b)
+    x0,x1 = 1,0
+    y0,y1 = 0,1
+    while b != 0:
+        # Tính q
+        q = a//b
+
+        # Thuật toán Euclid cập nhật a,b
+        a,b = b,a%b
+
+        # Cập nhật x,y
+        x0,x1 = x1,x0-x1.q
+        y0,y1 = y1,y0-y1.q
+
+    return a,x0,y0
+
+print(extended_gcd(p,q))
+
+    
