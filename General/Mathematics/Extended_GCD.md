@@ -46,7 +46,7 @@
 ### **Algorithm Approach:**
 > [!CAUTION]
 > - Để tạo ra $r_1$ ta cần đặt $a = a.1 + b.0$ và $b = a.0 + b.1$ khi này $r_1 = a.(1-0.q_1) + b.(0-1.q_1)$ <br>
-> - $a$ lớn hơn $b$ hay ngược lại không quan trọng vì thuật toán sẽ tự động điều chỉnh để thực hiện phép tính. <br>
+> - Không quan trọng $a>b$ hay $a<b$ vì Euclid tự đảo vị trí ở vòng lặp đầu tiên. <br>
 > - Với đề bài trên người ta dùng $p,q$ để thay cho $a,b$ và dùng $u,v$ để thay $x,y$.
 
 1. Tạo hàm **extended_gcd**(a,b).
