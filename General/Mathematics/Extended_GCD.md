@@ -1,4 +1,4 @@
-# Modular Square Root
+# Extended GCD
 
 * **Category:** General
 * **Points:** 20
