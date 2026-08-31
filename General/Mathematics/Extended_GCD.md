@@ -70,8 +70,8 @@ def extended_gcd(a,b): # a.x + b.y = gcd(a,b)
         a,b = b,a%b
 
         # Cập nhật x,y
-        x0,x1 = x1,x0-x1.q
-        y0,y1 = y1,y0-y1.q
+        x0,x1 = x1,x0-x1*q
+        y0,y1 = y1,y0-y1*q
 
     return a,x0,y0
 
