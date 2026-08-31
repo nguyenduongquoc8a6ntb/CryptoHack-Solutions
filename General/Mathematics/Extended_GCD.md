@@ -30,23 +30,19 @@
   - Thuật toán Euclid cho chúng ta biết hai dữ kiện quan trọng: $r_n = a.x_n + b.y_n$ và $r_n = (r_{n-2}) - (r_{n-1}).q_n$
   - Kết hợp hai dữ kiện trên ta thu được:
     
-    >  $r_n = (a.x_{n-2} + b.y_{n-2}) - (a.x_{n-1} + b.y_{n-1})$ <br>
+    >  $r_n = (a.x_{n-2} + b.y_{n-2}) - (a.x_{n-1} + b.y_{n-1}).q_{n-1}$ <br>
     >
-    > $\iff r_n = a.x_{n-2} + b.y_{n-2} - a.x_{n-1} - b.y_{n-1}$ <br>
+    > $\iff r_n = a.x_{n-2} + b.y_{n-2} - a.x_{n-1}.q_{n-1} - b.y_{n-1}.q_{n-1}$ <br>
     >
-    > $\iff r_n = a.[(x_{n-2}) - (x_{n-1})] + b.[(y_{n-2}) - (y_{n-1})]$
+    > $\iff r_n = a.[(x_{n-2}) - (x_{n-1}).q_{n-1}] + b.[(y_{n-2}) - (y_{n-1}).q_{n-1}]$
 
-  - d
-  - 
-  
+  - Như vậy cứ mỗi vòng lặp ta cập nhật biến $x_n$, $y_n$ tương ứng. Thì ở vòng lặp cuối ta sẽ thu được $a.x + b.y = gcd(a,b)$ với $x = x_n$, $y = y_n$ và $gcd(a,b) = r_{n-1}$.
+    
 ## 3. Python Implementation & Logic
 
 ### **Algorithm Approach:**
 > [!CAUTION]
-> - Bản chất dùng $b$ hay $b^2$ là như nhau tuỳ theo phương trình $R.b = a^{(Q+1)/2}.b \iff R^2.b^2=a.a^Q.b^2$. Trên phần giải thích tôi dùng $b^2$ để giải thích rõ sự triệt tiêu $t$, còn dưới code tôi dùng $b$ để code không quá phức tạp. <br>
-> - Mỗi vòng lặp ta phải tìm lại số $k$ mới để tạo ra $b$ mới vì $t$ không phải lúc nào cũng hạ từng bậc, có lúc hạ nhiều bậc. <br>
-> - Trong trường hữu hạn $Z_p$ thì gần một nửa số là **quadratic non-residue** nên cho chạy vòng lặp từ 1 đến p vẫn ổn nhưng vẫn khuyến khích dùng random số hơn. <br>
-> - Ở bước tìm $k$ ta cần dùng 1 biến tạm t_temp = $t$ để tránh làm thay đổi giá trị của $t$.
+> Để tạo ra $r_1$ ta cần đặt $a = a.1 + b.0$ và $b = a.0 + b.1$ khi này $r_1 = a.(1-0.q_1) + b.(0-1.q_1)$
 
 1. Tải file output.txt trong file sẽ chứa số a là **quadratic residue** và p.
 2. Tạo hàm tonelli_shanks($a,p$).
