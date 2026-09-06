@@ -32,14 +32,8 @@
   > $x^k \equiv 588 \pmod p$ <br>
   > $x^k.x \equiv 665 \pmod p$ <br>
   > $x^k.x^2 \equiv 216 \pmod p$ <br>
-  > - Thay (1) vào (2) và (3): <br>
-
-  $$
-    \begin{cases}
-    588.x \equiv 665 \pmod p \\
-    588.x^2 \equiv 216 \pmod p
-    \end{cases}
-  $$
+  > - Thay (1) vào (2) và (3):
+  > $\begin{cases} 588x \equiv 665 \pmod p \\ 588x^2 \equiv 216 \pmod p \end{cases}$
   >
   > - Nhân 588 vào hai vế phương trình $588.x^2 \equiv 216 \pmod p:$ <br>
   >
