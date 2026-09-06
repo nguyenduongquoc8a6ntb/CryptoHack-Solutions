@@ -36,9 +36,9 @@
   > 
   >   - $588x \equiv 665 \pmod p$ <br>
   >   - $588x^2 \equiv 216 \pmod p$
-  > - Nhân 588 vào hai vế phương trình $588.x^2 \equiv 216 \pmod p:$ <br>
+  > - Nhân 588 vào hai vế phương trình $588x^2 \equiv 216 \pmod p:$ <br>
   >
-  >   - $(588.x)^2 \equiv 216.588 \pmod p$ <br>
+  >   - $(588x)^2 \equiv 216.588 \pmod p$ <br>
   >   $\iff 665^2 \equiv 127008 \pmod p$ <br>
   >   $\iff 665^2 - 127008 \equiv 0 \pmod p$ <br>
   >   $\iff 315217 \equiv 0 \pmod p$
@@ -48,7 +48,7 @@
   >   - $-28489 \equiv 0 \pmod p$ <br>
   >   - $-125903 \equiv 0 \pmod p$
 
-- Ba số ta tìm được ở trên đều là bội số của p tức là nó chia hết cho p do vậy:
+- Ba số ta tìm được ở trên đều là bội số của p, tức là nó chia hết cho p do vậy:
   > $p = gcd(315217,-28489,-125903)$
 
 - Lấy từ phương trình $588.x \equiv 665 \pmod p$ ta biến đổi và thu được: $x \equiv 665.588^{-1} \pmod p$ với $588^{-1}$ là nghịch đảo modular của 588.
