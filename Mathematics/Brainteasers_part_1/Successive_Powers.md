@@ -54,7 +54,7 @@
 ### **Algorithm Approach:**
 > [!CAUTION]
 > - Ta cần tìm $p$ là số có 3 chữ số do vậy ước chung lớn nhất của 3 số khác nhau khả năng cao sẽ ra $p$. Trong trường hợp $p$ chưa phải 3 chữ số thì ta sẽ tìm tiếp số thứ 4 và tìm ước chung lớn nhất của nó với 3 số kia.
-> - Ta dùng hàm **pow()** có thể tìm nghịch đảo modular trong phiên bản python 3.8+.
+> - Hàm **pow()** có thể tìm nghịch đảo modular trong phiên bản python 3.8+.
 
 1. Tự tạo hàm **gcd()** hoặc dùng thư viện math.
 2. Tính $p$ và $x$.
