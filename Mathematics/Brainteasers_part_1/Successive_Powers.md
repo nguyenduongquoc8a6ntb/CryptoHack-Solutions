@@ -53,9 +53,27 @@
 ## 3. Python Implementation & Logic
 
 ### **Algorithm Approach:**
+> [!CAUTION]
+> - Ta cần tìm $p$ là số có 3 chữ số do vậy ước chung lớn nhất của 3 số khác nhau khả năng cao sẽ ra $p$. Trong trường hợp $p$ chưa phải 3 chữ số thì ta sẽ tìm tiếp số thứ 4 và tìm ước chung lớn nhất của nó với 3 số kia.
+> - Ta dùng hàm **pow()** có thể tìm nghịch đảo modular trong phiên bản python 3.8+.
 
+1. Tự tạo hàm gcd() hoặc dùng thư viện math.
+2. Tính $p$ và $x$.
+3. In ra flag với định dạng **crypto{p,x}**
 
 ### **Python Code:**
 ```python
+# Tạo hàm gcd()
+def gcd(a,b):
+    a,b = abs(a),abs(b)
+    while b!=0:
+        a,b = b,a%b
+    return a
 
+# Tính p,x
+p = gcd(gcd(315217,-28489),-125903)
+x = (665 * pow(588,-1,p)) % p
+
+# In flag
+print(f"crypto{{{p},{x}}}")   
 
