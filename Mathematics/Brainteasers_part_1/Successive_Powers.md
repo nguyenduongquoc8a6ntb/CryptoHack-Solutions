@@ -29,7 +29,17 @@
 
 - Ta xét ba phương trình (1),(2) và (3):
 
-  > $$ \begin{cases} x^k \equiv 588 \pmod p \\ x^{k+1} \equiv 665 \pmod p \\ x^{k+2} \equiv 216 \pmod p \end{cases} $$
+  <blockquote>
+
+$$
+\begin{cases}
+x^k \equiv 588 \pmod p \\
+x^{k+1} \equiv 665 \pmod p \\
+x^{k+2} \equiv 216 \pmod p
+\end{cases}
+$$
+
+</blockquote>
   > 
   > - Thay (1) vào (2) và (3):
   > 
