@@ -27,4 +27,5 @@
   * [Modular Square Root](./Mathematics/Modular%20Math/Modu;lar_Square_Root2.md)
   * [Chinese Remainder Theorem](./Mathematics/Modular%20Math/Chinese_Remainder_Theorem.md)
 - Brainteasers part 1
+  * [Successive Powers](./Mathematics/Brainteasers_part_1/Successive_Powers.md)
 ## RSA
