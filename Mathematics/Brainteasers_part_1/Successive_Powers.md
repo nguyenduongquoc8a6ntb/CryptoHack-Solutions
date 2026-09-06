@@ -30,11 +30,10 @@
 - Ta xét ba phương trình (1),(2) và (3):
   > 
   > - Thay (1) vào (2) và (3):
-  > 
   >   - $588x \equiv 665 \pmod p$ <br>
   >   - $588x^2 \equiv 216 \pmod p$
+  > 
   > - Nhân 588 vào hai vế phương trình $588x^2 \equiv 216 \pmod p:$ <br>
-  >
   >   - $(588x)^2 \equiv 216.588 \pmod p$ <br>
   >   $\iff 665^2 \equiv 127008 \pmod p$ <br>
   >   $\iff 665^2 - 127008 \equiv 0 \pmod p$ <br>
