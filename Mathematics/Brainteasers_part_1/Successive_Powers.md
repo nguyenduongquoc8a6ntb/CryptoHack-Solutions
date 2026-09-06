@@ -31,9 +31,9 @@
 
   > $$
   > \begin{cases}
-  > $x^k \equiv 588 \pmod p$ //
-  > $x^k.x \equiv 665 \pmod p$ //
-  > $x^k.x^2 \equiv 216 \pmod p$ //
+  > x^k \equiv 588 \pmod p \\
+  > x^k.x \equiv 665 \pmod p \\
+  > x^k.x^2 \equiv 216 \pmod p \\
   > \end{cases}
   > $$
   > 
