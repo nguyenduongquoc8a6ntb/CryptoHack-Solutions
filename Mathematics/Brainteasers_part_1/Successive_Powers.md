@@ -29,7 +29,7 @@
 
 - Ta xét ba phương trình (1),(2) và (3):
 
-  > $$ \begin{cases} x^k \equiv 588 \pmod p \\ x^k.x \equiv 665 \pmod p \\ x^k.x^2 \equiv 216 \pmod p \end{cases} $$
+  > $$ \begin{cases} x^k \equiv 588 \pmod p \\ x^k \cdot x \equiv 665 \pmod p \\ x^k \cdot x^2 \equiv 216 \pmod p \end{cases} $$
   > 
   > - Thay (1) vào (2) và (3):
   > 
