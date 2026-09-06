@@ -30,11 +30,11 @@
 - Kết hợp ba phương trình $(1),(2) và (3)$ ta thu được:
 
   > $x^k \equiv 588 \pmod p (1)$ <br>
-  > $x^k.x \eqiv 665 \pmod p (2)$ <br>
+  > $x^k.x \equiv 665 \pmod p (2)$ <br>
   > $x^k.x^26 \equiv 216 \pmod p (3)$ <br>
   > - Thay (1) vào (2) và (3): <br>
   >   $\iff 588.x \equiv 665 \pmod p$ <br>
-  >        $588.x^2 \equiv 216 \pmod p$ <br>
+  >   $     588.x^2 \equiv 216 \pmod p$ <br>
   > - Nhân 588 vào hai vế phương trình $588.x^2 \equiv 216 \pmod p:$ <br>
   >   $(588.x)^2 \equiv 216.588 \pmod p$ <br>
   >   $\iff 665^2 \equiv 127008 \pmod p$ <br>
