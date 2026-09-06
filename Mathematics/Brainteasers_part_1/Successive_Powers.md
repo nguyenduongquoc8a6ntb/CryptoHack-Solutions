@@ -45,10 +45,10 @@
   >   - $-28489 \equiv 0 \pmod p$ <br>
   >   - $-125903 \equiv 0 \pmod p$
 
-- Ba số ta tìm được ở trên đều là bội số của p, tức là nó chia hết cho p do vậy:
+- Ba số ta tìm được ở trên đều là bội số của $p$, tức là nó chia hết cho $p$ do vậy:
   > $p = gcd(315217,-28489,-125903)$
 
-- Lấy từ phương trình $588.x \equiv 665 \pmod p$ ta biến đổi và thu được: $x \equiv 665.588^{-1} \pmod p$ với $588^{-1}$ là nghịch đảo modular của 588.
+- Lấy từ phương trình $588x \equiv 665 \pmod p$ ta biến đổi và thu được: $x \equiv 665.588^{-1} \pmod p$ với $588^{-1}$ là nghịch đảo modular của 588.
 
 ## 3. Python Implementation & Logic
 
