@@ -28,5 +28,5 @@
   * [Chinese Remainder Theorem](./Mathematics/Modular%20Math/Chinese_Remainder_Theorem.md)
 - Brainteasers part 1
   * [Successive Powers](./Mathematics/Brainteasers_part_1/Successive_Powers.md)
-  * [Adrien's Signs](./Mathematics/Brainteasers_part_1/Adrien's_Signs)
+  * [Adrien's Signs](./Mathematics/Brainteasers_part_1/Adrien's_Signs.md)
 ## RSA
