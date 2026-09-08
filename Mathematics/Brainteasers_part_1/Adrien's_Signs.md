@@ -33,7 +33,7 @@
 1. Tải file **output.txt**.
 2. Tạo hàm **decrypt()**.
 3. Tạo chuỗi rỗng **binary**.
-4. Duyệt mảng **ciphertext**. Nếu là **quardratic residue** thì thêm 1 vào **binary**, ngược lại thì thêm 0 vào **binary**.
+4. Duyệt mảng **ciphertext**. Nếu là **quadratic residue** thì thêm 1 vào **binary**, ngược lại thì thêm 0 vào **binary**.
 5. Từ chuỗi **binary** chuyển thành **int** rồi chuyển thành **plaintext**.
 6. Flag chính là **plaintext**.
 
