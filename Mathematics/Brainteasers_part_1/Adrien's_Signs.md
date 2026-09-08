@@ -6,11 +6,11 @@
 
 ---
 ## 1. Description
-
+<img width="996" height="135" alt="image" src="https://github.com/user-attachments/assets/c36fc4a9-0faa-4377-b31f-19fc61e62e5e" />
+<img width="479" height="453" alt="image" src="https://github.com/user-attachments/assets/8c492077-1955-486a-b7c2-91ec2d97486b" />
 
 ## 2. Mathematical Background & Solution
-- Một số nguyên $a$ được gọi là **Quadratic Residue (Thặng dư bình phương)** mod $p$ nếu tồn tại số $x$ sao cho $x^2 \equiv a \pmod p$
-- Ta có: $x^2 \equiv a \pmod p \iff x^2 - a \equiv 0 \pmod p \iff x^2 \pmod p = a$
+
 
 ## 3. Python Implementation & Logic
 
