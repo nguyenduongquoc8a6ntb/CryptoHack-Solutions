@@ -24,7 +24,7 @@
   >
   > $\iff (a^e)^{(p-1)/2} \equiv 1 \pmod p$ <br>
   > - Đẳng thức này chứng minh cho ta thấy rằng $a^e$ chắc chắn là **quadratic residue**.
-- Như vậy thao tác $a^e$ thực chất không làm thay đổi tính chất của $a$ là **quadratic residue**, ta chỉ việc khôi phục lại từ **ciphertext** thành **binary** bằng cách kiểm tra nó có phải **quadratic residue** hay không.
+- Như vậy thao tác $a^e$ thực chất không làm thay đổi tính chất của $a$ là **quadratic residue**, ta chỉ việc khôi phục từ **ciphertext** thành **binary** bằng cách kiểm tra nó có phải **quadratic residue** hay không.
 - Từ ciphertext → binary → số nguyên → plaintext (Flag).
 
 ## 3. Python Implementation & Logic
