@@ -19,7 +19,7 @@
   >
   > - Lúc này ta lấy mũ $e$ hai vế: <br>
   >
-  > $\iff (a^{(p-1)/2)^e \equiv 1^e \pmod p$ <br>
+  > $\iff (a^{(p-1)/2})^e \equiv 1^e \pmod p$ <br>
   > - Áp dụng quy tắc giao hoán số mũ $(x^m)^n = (x^n)^m$: <br>
   >
   > $\iff (a^e)^{(p-1)/2} \equiv 1 \pmod p$ <br>
