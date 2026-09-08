@@ -51,7 +51,7 @@ def encrypt(ciphertext):
         else:
             binary += "0"
 
-    plaintext = bytes([int(binary[j:j+8],2)] for j in range(0,len(binary),8)]).decode()
+    plaintext = bytes([int(binary[j:j+8],2) for j in range(0,len(binary),8)]).decode()
 
     return plaintext
 
