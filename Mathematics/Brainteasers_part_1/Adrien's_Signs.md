@@ -13,7 +13,7 @@
   
   > <img width="479" height="453" alt="image" src="https://github.com/user-attachments/assets/8c492077-1955-486a-b7c2-91ec2d97486b" />
 
-- Ta thấy mỗi ký tự trong chuỗi **FLAG** được biến thành 8 ký tự nhị phân. Nếu ký tự 1 thì mảng **ciphertext** sẽ thêm $n = a^e \bmod p$, ngược lại **ciphertext** sẽ thêm $-n \bmod p$.
+- Ta thấy mỗi ký tự trong chuỗi **FLAG** được biến thành 8 ký tự nhị phân. Nếu ký tự là 1 thì mảng **ciphertext** sẽ thêm $n = a^e \bmod p$, ngược lại **ciphertext** sẽ thêm $-n \bmod p$.
 - Việc lấy $a^e \pmod p$ với $e$ ngẫu nhiên làm cho ta nghĩ rằng bài toán này là bất khả thi.
 - Tuy nhiên khi áp dụng tiêu chuẩn Euler với $a$ ta biết được $a$ là **quadratic residue** vì $a^{(p-1)/2} \equiv 1 \pmod p$.
   >
