@@ -21,14 +21,18 @@
   > - Ta làm tương tự với $c_2$ và thu được: $(7q)^{e_2} \equiv c_2 \pmod p$ <br>
 
 - Ta biến đổi hệ phương trình như sau:
+  
   > $(3q)^{e_1} \equiv c_1 \pmod p$ <br>
   > $(7q)^{e_2} \equiv c_2 \pmod p$
   
   - Mũ chéo hai phương trình:
-    > $(3q)^{{e_1}{e_2}} \equiv c_1^{e_2} \pmod p$ <br>
-    > $(7q)^{{e_1}{e_2}} \equiv c_2^{e_1} \pmod p$
     
-
+    > $3^{{e_1}{e_2}} q^{{e_1}{e_2}} \equiv c_1^{e_2} \pmod p$ <br>
+    > $7^{{e_1}{e_2}} q^{{e_1}{e_2}}\equiv c_2^{e_1} \pmod p$
+  - Nhân $7^{{e_1}{e_2}}$ vào phương trình (1) và $3^{{e_1}{e_2}}$ vào phương trình (2):
+    
+    > $21^{{e_1}{e_2}} q^{{e_1}{e_2}} \equiv c_1^{e_2} 7^{{e_1}{e_2}} \pmod p$
+    > $21^{{e_1}{e_2}} q^{{e_1}{e_2}} \equiv c_2^{e_1} 3^{{e_1}{e_2}} \pmod p$
 
 ## 3. Python Implementation & Logic
 
