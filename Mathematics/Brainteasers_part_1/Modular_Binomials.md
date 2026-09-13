@@ -13,9 +13,8 @@
 > [!CAUTION]
 > Công thức tổng quát của Khai triển Nhị thức Newton là: $(a + b)^n = C_n^0 a^n + C_n^1 a^{n-1}b + C_n^2 a^{n-2}b^2 + \dots + C_n^{n-1} a b^{n-1} + C_n^n b^n$. Ta thấy $n$ số hạng đầu đều chia hết cho $a$. Vì thế nếu $a \equiv 0 \pmod p$ thì modulo $p$ của $n$ số hạng đầu đều bằng 0 và chỉ còn đúng số hạng $b^n$.
 - Mục tiêu lúc này của ta là biến đổi hệ phương trình đồng dư trên thành $A$ sao cho $A \equiv 0 \pmod p$. Sau đó tính ra $p = gcd(A,N)$.
-  > - Xét $c_1 = (2p+3q)^{e_1} \bmod N$ <br>
-  >   - $\iff (2p+3q)^{e_1} = k.N + c_1$ <br>
-  >   - modulo $p$ hai vế: $\iff (3q)^{e_1} \bmod p = c_1 \bmod p$ hay $(3q)^{e_1} \equiv c_1 \pmod p$ <br>
+  > - Xét $c_1 = (2p+3q)^{e_1} \bmod N \iff (2p+3q)^{e_1} = k.N + c_1$ <br>
+  >   - modulo $p$ hai vế: (3q)^{e_1} \bmod p = c_1 \bmod p$ hay $(3q)^{e_1} \equiv c_1 \pmod p$ <br>
   > - Ta làm tương tự với $c_2$ và thu được: $(7q)^{e_2} \equiv c_2 \pmod p$ <br>
 
 ## 3. Python Implementation & Logic
