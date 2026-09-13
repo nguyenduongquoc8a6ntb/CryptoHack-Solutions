@@ -21,12 +21,13 @@
   > - Ta làm tương tự với $c_2$ và thu được: $(7q)^{e_2} \equiv c_2 \pmod p$ <br>
 
 - Ta biến đổi hệ phương trình như sau:
-$$
-\begin{cases}
-x + y = 5 \\
-2x - y = 1
-\end{cases}
-$$
+
+  $$
+  \begin{cases}
+  x + y = 5 \\
+  2x - y = 1
+  \end{cases}
+  $$
 ## 3. Python Implementation & Logic
 
 ### **Algorithm Approach:**
