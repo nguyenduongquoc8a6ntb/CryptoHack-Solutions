@@ -20,14 +20,7 @@
   >
   > - Ta làm tương tự với $c_2$ và thu được: $(7q)^{e_2} \equiv c_2 \pmod p$ <br>
 
-- Ta biến đổi hệ phương trình như sau:
-
-  $$
-  \begin{cases}
-  (3q)^{e_1} \equiv c1 \pmod p \\
-  (7q)^{e_2} \equiv c2 \pmod p
-  \end{cases}
-  $$
+- Ta biến đổi hệ phương trình như sau:$\begin{cases}(3q)^{e_1} \equiv c1 \pmod p \\(7q)^{e_2} \equiv c2 \pmod p\end{cases}$
 
 ## 3. Python Implementation & Logic
 
