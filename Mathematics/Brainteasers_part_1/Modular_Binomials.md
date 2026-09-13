@@ -27,12 +27,12 @@
   
   - Mũ chéo hai phương trình:
     
-    > $3^{{e_1}{e_2}} q^{{e_1}{e_2}} \equiv c_1^{e_2} \pmod p$ <br>
-    > $7^{{e_1}{e_2}} q^{{e_1}{e_2}}\equiv c_2^{e_1} \pmod p$
+    > $3^{{e_1}{e_2}} .q^{{e_1}{e_2}} \equiv c_1^{e_2} \pmod p$ <br>
+    > $7^{{e_1}{e_2}} .q^{{e_1}{e_2}}\equiv c_2^{e_1} \pmod p$
   - Nhân $7^{{e_1}{e_2}}$ vào phương trình (1) và $3^{{e_1}{e_2}}$ vào phương trình (2):
     
-    > $21^{{e_1}{e_2}} q^{{e_1}{e_2}} \equiv c_1^{e_2} 7^{{e_1}{e_2}} \pmod p$
-    > $21^{{e_1}{e_2}} q^{{e_1}{e_2}} \equiv c_2^{e_1} 3^{{e_1}{e_2}} \pmod p$
+    > $21^{{e_1}{e_2}} .q^{{e_1}{e_2}} \equiv c_1^{e_2} .7^{{e_1}{e_2}} \pmod p$ <br>
+    > $21^{{e_1}{e_2}} .q^{{e_1}{e_2}} \equiv c_2^{e_1} .3^{{e_1}{e_2}} \pmod p$
 
 ## 3. Python Implementation & Logic
 
