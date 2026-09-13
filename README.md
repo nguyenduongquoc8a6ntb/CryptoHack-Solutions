@@ -29,4 +29,5 @@
 - Brainteasers part 1
   * [Successive Powers](./Mathematics/Brainteasers_part_1/Successive_Powers.md)
   * [Adrien's Signs](./Mathematics/Brainteasers_part_1/Adrien's_Signs.md)
+  * [Modular Binomials](./Mathematics/Brainteasers_part_1/Modular_Binomials.md)
 ## RSA
