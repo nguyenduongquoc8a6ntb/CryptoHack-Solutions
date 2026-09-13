@@ -24,8 +24,8 @@ Ta biến đổi hệ phương trình như sau:
 
 $$
 \begin{cases}
-(3q)^e_1 \equiv c1 \pmod p \\
-(7q)^e_2 \equiv c2 \pmod p
+(3q)^{e_1} \equiv c1 \pmod p \\
+(7q)^{e_2} \equiv c2 \pmod p
 \end{cases}
 $$
 
