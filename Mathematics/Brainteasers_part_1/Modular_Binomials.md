@@ -35,6 +35,8 @@
     > $21^{{e_1}{e_2}} .q^{{e_1}{e_2}} \equiv c_2^{e_1} .3^{{e_1}{e_2}} \pmod p$
   - Thu được: $c_1^{e_2} .7^{{e_1}{e_2}} \equiv c_2^{e_1} .3^{{e_1}{e_2}} \pmod p \iff c_1^{e_2} .7^{{e_1}{e_2}} - c_2^{e_1} .3^{{e_1}{e_2}} \equiv 0 \pmod p$
 
+- Vậy ta tìm được $A = c_1^{e_2} .7^{{e_1}{e_2}} - c_2^{e_1} .3^{{e_1}{e_2}}$ và dễ dàng tính được $p$ từ đó suy ra $q$.
+
 ## 3. Python Implementation & Logic
 
 ### **Algorithm Approach:**
