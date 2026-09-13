@@ -43,7 +43,7 @@
 
 ### **Algorithm Approach:**
 > [!CAUTION]
-> Ta không thể dùng trực tiếp $A = c_1^{e_2} .7^{{e_1}{e_2}} - c_2^{e_1} .3^{{e_1}{e_2}}$ (số rất lớn) mà phải chia nhỏ nó ra để modulo với $N$.
+> Ta không thể dùng trực tiếp $A = c_1^{e_2} .7^{{e_1}{e_2}} - c_2^{e_1} .3^{{e_1}{e_2}}$ vì số rất lớn thế nên phải chia nhỏ từng phần ra để modulo với $N$.
 
 1. Tải file **data.txt**.
 2. Tạo hàm **gcd()** hoặc gọi từ thư viện math.
