@@ -16,7 +16,7 @@
   
   > - Xét $c_1 = (2p+3q)^{e_1} \bmod N \iff (2p+3q)^{e_1} = k.N + c_1$ <br>
   >
-  >   - modulo $p$ hai vế: $(3q)^{e_1} \bmod p = c_1 \bmod p$ hay $(3q)^{e_1} \equiv c_1 \pmod p$ <br>
+  >   - modulo $p$ hai vế: $(3q)^{e_1} \bmod p = c_1 \bmod p \iff (3q)^{e_1} \equiv c_1 \pmod p$ <br>
   >
   > - Ta làm tương tự với $c_2$ và thu được: $(7q)^{e_2} \equiv c_2 \pmod p$ <br>
 
